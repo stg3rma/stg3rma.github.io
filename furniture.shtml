@@ -1,0 +1,139 @@
+<!--#include virtual="/ssi/header.html" -->
+		
+<ol class="breadcrumb">
+  <li><a href="/index.shtml">home</a></li>
+  <li class="active"><a href="/furniture.shtml">furniture</a></li>
+</ol>   
+
+		<div class="jumbotron jumbotron-project" >
+          <div class="container">  
+            <div class="col-md-12">
+                <h2 class="featurette-heading"><span class="text-muted">furniture</span></h2>
+                <p class="lead ">The table, chair and desk below were completed while a student in the two year Cabinet and Furniture Making program at the North Bennet Street School in Boston's North End.</p>
+            </div>
+		  </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6 col-md-8">
+           
+
+ 
+  <div class="bs-example">
+            <div class="media media-padding">
+          <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="0">
+            <img class="media-object img-rounded img-responsive" src="images/demilune_table_150w.png" alt="Generic placeholder image">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Demi-lune Table</h4>
+             The table legs are turned and carved mahogany. The table top and sides are beautiful crotch mahogany veneer with beaded edge.
+          </div>
+        </div>
+    <div class="media media-padding">
+      <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="1">
+        <img class="media-object img-rounded img-responsive" src="images/desk_closed_150w.png" alt="Generic placeholder image">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Desk on Frame</h4>
+        This is a William and Mary inspired piece constructed in mahagony. The legs were hand carved into double-bines ending in bun feet. The drawer front and slant-top are adorned with cherry and maple cheveron banding. 
+      </div>
+    </div>
+    <div class="media media-padding">
+     <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="2">
+        <img class="media-object img-rounded img-responsive" src="images/armchair_150w.png" alt="Generic placeholder image">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Armchair</h4>
+        This George III style mahagony armchair features sweeping curves, carved armrests, cabriole legs with pad feet and leather upholstered frame seat.
+      </div>
+    </div>
+
+    <h6>NOTE: <small>click on images above to view slideshow</small></h6>
+<!-- /.bs-example -->
+
+        </div>
+      </div>
+            
+            <div class="col-sm-3 col-md-3">
+                <aside>
+                  <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Materials</h3>
+                  </div>
+                  <div class="panel-body">
+                    <h4>Wood</h4>
+                    <p>Hardwoods such as mahogany, maple, cherry and walnut are typically used with softwoods such as poplar and soft maple for interior elements such as drawers.</p>
+                    <h4>Finish</h4>
+                  <p>These desk and chest have been coated with tung oil. The finish is gradually padded on until a lush and luminous surface builds. Oil gives the wood a warm natural appearance but affords little protection from surface abrasion.</p>
+                  <p>The chair has a shellac finish. Shellac flakes, made from a resin secreted by the lac bug, is dissolved in alchol and padded on.</p>
+                  </div>
+                </div>
+                 
+                </aside>
+              </div>
+
+        </div>
+              
+<!-- furniture modal -->
+<div class="modal fade" id="furnitureModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">Close</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+       
+      <!-- furniture carousel start -->   
+<div id="carousel-furniture" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-furniture" data-slide-to="0" ></li>
+    <li data-target="#carousel-furniture" data-slide-to="1" ></li>
+    <li data-target="#carousel-furniture" data-slide-to="2" ></li>
+  </ol>
+
+  <div class="carousel-inner hisrc">
+    <div class="item active">
+      <img src="images/demilune_table_lg.png" data-1x="images/demilune_table_lg.png" data-2x="images/demilune_table_lg.png" alt="..." >
+      <div class="carousel-caption">
+        <h2>furniture</h2>
+        <p>draw, measure twice & cut once</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/desk_closed_lg.png" data-1x="images/desk_closed_lg.png" data-2x="images/desk_closed_lg.png" alt="..." >
+      <div class="carousel-caption">
+        <h2>painting</h2>
+        <p>dry, layer, chop & adhere</p>
+      </div>
+    </div>
+  <div class="item">
+           <img src="images/armchair_lg.png" data-1x="images/armchair_lg.png" data-2x="images/armchair_lg.png" alt="..." >
+      <div class="carousel-caption">
+         <h2>papercraft</h2>
+        <p>draw, cut & lift</p>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- carousel arrows -->
+  <a class="left carousel-control" href="#carousel-furniture" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-furniture" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<!-- furniture carousel end -->
+
+
+      </div>
+   
+    </div>
+  </div>
+</div>
+       
+
+<!--#include virtual="/ssi/footer.html" -->

@@ -1,0 +1,74 @@
+StefanieStGermainAssignment1
+
+http://stefaniestgermain.org
+
+Three styles/components used:
+- glyphicons on pancake, contact.shtml envelope, in badges on about.shtml intersests tab
+- jumbotron on painting.shtml, furniture.shtml and papercraft.shtml
+- panels in asides on painting.shtml, furniture.shtml and papercraft.shtml
+- responsive utilities to hide image on about.shtml on sm & xs and hide glyphicon envelope on contact.shtml at sm & xs
+- thumbnails with buttons on the home pages
+- breadcrumbs
+- navbar with dropdowns
+
+
+Two javascript widgets used:
+- carousel on home page
+- modal with carousel in it on furniture.shtml, painting.shtml & papercraft.shtml
+- tabs on about.shtml
+- collapse on about.shtml education tab
+- buttons on home page
+- badges with glyphicons on about.shtml intersts tab
+- tooltips on read more buttons on home page
+- hisrc on images
+
+
+LESS partial files: custom.less & variables.less
+
+
+Custom Styles:
+
+- changed color scheme and secondary & tertiary color
+- jumbotron on painting.shtml, furniture.shtml and papercraft.shtml 
+- buttons on thumbnails on home page - added glyphicon & added btn-readmore
+- styled the panels on the painting.shtml, furniture.shtml and papercraft.shtml and modified for panel group under
+about > education
+- styled media group on painting.shtml, furniture.shtml and papercraft.shtml
+- changed x to close & styled close text
+- change text size jumbotron & home page carousel on sm xs 
+- styled toggle pancake button
+- styled xs sm dropdown colors
+- sytled footer
+
+Customized Bootstrap Styles (variables.less):
+
+added:
+@brand-secondary & @brand-tertiary
+
+edited:
+@font-family-sans-serif & @font-family-serif to 'Source Sans Pro' and 'Roboto Slab'
+@headings-font-family
+@dropdown-divider-bg
+@dropdown-link-hover-bg:
+@navbar-default-link-active-bg: 
+@navbar-default-link-disabled-bg:  
+@navbar-inverse-color: 
+@navbar-inverse-bg
+@navbar-inverse-link-color: 
+@navbar-inverse-toggle-hover-bg: 
+@navbar-inverse-toggle-border-color:
+@nav-tabs-border-color:  
+@jumbotron-padding:  
+@jumbotron-bg:  
+@jumbotron-heading-color:
+@modal-inner-padding:  
+@modal-header-border-color: 
+@panel-default-text:
+@panel-default-border 
+@panel-default-header-bg 
+@panel-primary-text
+@panel-primary-heading-bg
+carousel-control-opacity
+carousel-control-font-size
+
+

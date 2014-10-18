@@ -1,0 +1,131 @@
+<!--#include virtual="/ssi/header.html" -->
+
+<ol class="breadcrumb">
+  <li><a href="/index.shtml">home</a></li>
+  <li class="active"><a href="/about.shtml">about</a></li>
+</ol>		
+
+
+
+<div class="row" >
+<div class="col-sm-3 col-md-2"><img class="img-circle img-responsive pull-left hidden-xs hidden-sm" src="images/stefanie_med.png" data-1x="images/stefanie_med.png" data-2x="images/stefanie_med.png" alt="stefanie" ></div>
+<div class="col-sm-6 col-md-8">
+
+              <!-- Nav tabs -->
+      <ul class="nav nav-tabs " role="tablist">
+        <li class="active"><a href="#home" role="tab" data-toggle="tab">About</a></li>
+        <li><a href="#education" role="tab" data-toggle="tab">Education</a></li>
+        <li><a href="#interests" role="tab" data-toggle="tab">Interests</a></li>
+       </ul>
+
+	<div class="tab-content">
+		<div class="tab-pane fade in active" id="home">
+            
+            <p>Trained at the North Bennet Street School in historic cabinet and furniture making and having dabbled in painting and papercraft, Stefanie is an IT professional and graduate student with a creative side. She is hoping in the future to find ways to have these two worlds intersect.</p>
+        </div>
+        <div class="tab-pane fade" id="education">
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Boston College
+                      </a>
+                    </h4>
+                  </div>
+                 <div id="collapseOne" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                      B.A in Art History, summa cum laude
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        North Bennet Street School
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      Cabinet and Furniture Making 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Harvard Extension School
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                  applicant to the degree of Master of Liberal Arts (ALM)
+                    <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Code</th>
+                            <th>Term</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Understanding and Developing Interactive Media</td>
+                            <td>DGMD E-20</td>
+                            <td>Fall Term 2014</td>
+                          </tr>
+                           <tr>
+                            <td>Web Content Management Systems</td>
+                            <td>DGMD E-25</td>
+                            <td>Spring Term 2014</td>
+                          </tr>
+                           <tr>
+                            <td>Web App Dev/Groovy and Grails</td>
+                            <td>CSCI E-56</td>
+                            <td>Fall Term 2013</td>
+                          </tr>
+                           <tr>
+                            <td>Screen-Based, Phys Computing</td>
+                            <td>CSCI E-9</td>
+                            <td>Spring Term 2013</td>
+                          </tr>
+                           <tr>
+                            <td>Dynamic Web Applications</td>
+                            <td>CSCI E-75</td>
+                            <td>Fall Term 2012</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    </div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		 </div>
+        <div class="tab-pane fade" id="interests">
+			  <ul  class="list-group">
+				<li class="list-group-item"><span class="badge"><span class="glyphicon glyphicon-book"></span></span>Northern Renaissance Art</li>
+				<li class="list-group-item"><span class="badge"><span class="glyphicon glyphicon-floppy-disk" ></span></span><a href="#" id="d3">D3.js</a></li>
+				<li class="list-group-item"><span class="badge"><span class="glyphicon glyphicon-floppy-disk"></span></span>Processing/Arduino</li>
+				<li class="list-group-item"><span class="badge" ><span class="glyphicon glyphicon-heart-empty"></span></span>Origami</li>
+				<li class="list-group-item"><span class="badge"><span class="glyphicon glyphicon-floppy-disk"></span></span>Rhino 3d & Grasshopper</li>
+			  </ul>
+		</div>
+   </div>
+</div> <!-- end tab-->
+<div class="col-sm-3 col-md-2"></div>
+</div><!-- end row-->
+
+
+       
+	
+
+
+       
+
+<!--#include virtual="/ssi/footer.html" -->

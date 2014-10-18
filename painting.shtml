@@ -1,0 +1,147 @@
+<!--#include virtual="/ssi/header.html" -->
+		
+<ol class="breadcrumb">
+  <li><a href="/index.shtml">home</a></li>
+  <li class="active"><a href="/painting.shtml">painting</a></li>
+</ol>   
+
+		<div class="jumbotron jumbotron-project" >
+          <div class="container">  
+            <div class="col-md-12">
+                <h2 class="featurette-heading"><span class="text-muted">painting</span></h2>
+                <p class="lead ">Utilizing woodworking tools and techniques to create layered, cut and assembled acrylic paintings, these standard-sized works command a large presence relative to their somewhat diminutive size and can be read as both painting and low relief sculpture.</p>
+            </div>
+		  </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6 col-md-8">
+           
+
+ 
+  <div class="bs-example">
+            <div class="media media-padding">
+          <a class="pull-left" data-toggle="modal" data-target="#paintingModal" data-slide-to="0">
+            <img class="media-object img-rounded img-responsive" src="images/painting_mosaicI_150w.png" alt="Generic placeholder image">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Mosaic #1</h4>
+             <h5><em>acrylic paint on 6" x 6" panel</em></h5>
+            In the Mosaic series the stack of dried layered paint was sliced into very thin pieces. Each piece, a cross-section of the stack it was derived from covers the painting surface.
+          </div>
+        </div>
+    <div class="media media-padding">
+      <a class="pull-left" data-toggle="modal" data-target="#paintingModal" data-slide-to="1">
+        <img class="media-object img-rounded img-responsive" src="images/painting_topography_150w.png" alt="Generic placeholder image">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Topography #6</h4>
+        <h5><em>acrylic paint on 6" x 6" panel</em></h5>
+        In the Topography series the layered stack of dried paint is chopped into narrow strips of varying thicknesses. The top or bottom layers from the dried layered paint stack is what is visible to the viewer. Other colors in the stack are visible in side view as pieces fill the picture plain in a manner that looks much like a topographical map.
+      </div>
+    </div>
+    <div class="media media-padding">
+     <a class="pull-left" data-toggle="modal" data-target="#paintingModal" data-slide-to="2">
+        <img class="media-object img-rounded img-responsive" src="images/painting_mosaic5_150w.png" alt="Generic placeholder image">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Mosaic #5</h4>
+         <h5><em>acrylic paint on 6" x 6" panel</em></h5>
+        In this painting the paint pieces, like those in Mosaic#1, are themselves chopped even further. The small paint bits will literally poured onto a surface of acrylic gel medium.
+      </div>
+    </div>
+    
+    <h6>NOTE: <small>click on images above to view slideshow</small></h6>
+
+<!-- /.bs-example -->
+
+        </div>
+      </div>
+            
+            <div class="col-sm-3 col-md-3">
+                <aside>
+                  <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Technique</h3>
+                  </div>
+                  <div class="panel-body">
+                    <h4>Paint</h4>
+                    <p>Mix acrylic paint colors on plastic sheets and let dry.</p>
+                    <h4>Layer</h4>
+                  <p>Dried sheets of paint are layered and adhered to one another using acrylic gel medium.</p>
+                  <h4>Chop</h4>
+                  <p>The stacked sheets of acrylic paint are chopped into pieces; strips for Topography series; tiny bits for Mosaic series.</p>
+                    <h4>Assemble</h4>
+                  <p>The chopped pieces of paint are arranged and adhered to six inch wooden panels using acrylic gel medium.</p>
+                  </div>
+                </div>
+                 
+                </aside>
+              </div>
+
+        </div>
+              
+<!-- painting modal -->
+<div class="modal fade" id="paintingModal" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">Close</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+       
+      <!-- painting carousel start -->   
+<div id="carousel-painting" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-painting" data-slide-to="0" ></li>
+    <li data-target="#carousel-painting" data-slide-to="1" ></li>
+    <li data-target="#carousel-painting" data-slide-to="2" ></li>
+  </ol>
+
+  <div class="carousel-inner hisrc">
+    <div class="item active">
+      <img src="images/painting_mosaicI_lg.png" data-1x="images/painting_mosaicI_lg.png" data-2x="images/painting_mosaicI_lg.png" alt="..." >
+      <div class="carousel-caption">
+        <h2>Mosaic #1</h2>
+        <p>acrylic on panel</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/painting_topography_lg.png" data-1x="images/painting_topography_lg.png" data-2x="painting_topography_lg.png" alt="..." >
+      <div class="carousel-caption">
+        <h2>Topography #6</h2>
+        <p>acrylic on panel</p>
+      </div>
+    </div>
+  <div class="item">
+           <img src="images/painting_mosaic5_lg.png" data-1x="images/painting_mosaic5_lg.png" data-2x="images/painting_mosaic5_lg.png" alt="..." >
+      <div class="carousel-caption">
+         <h2>Mosaic #5</h2>
+        <p>acrylic on panel</p>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- carousel arrows -->
+  <a class="left carousel-control" href="#carousel-painting" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-painting" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<!-- painting carousel end -->
+
+
+      </div>
+   
+    </div>
+  </div>
+</div>
+       
+
+
+<!--#include virtual="/ssi/footer.html" -->

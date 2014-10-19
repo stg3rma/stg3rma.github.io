@@ -1,4 +1,61 @@
-<!--#include virtual="/ssi/header.html" -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>St Germain E-20</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> 
+   <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/respond.min.js"></script>
+     <script src="js/application.js"></script>
+    <style>
+    .hisrc img {
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-inverse navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-list"></span>
+    MENU
+      </button>
+      <a class="navbar-brand" href="/index.shtml">Stefanie St. Germain</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">projects<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+        <li><a href="/furniture.shtml">furniture</a></li>
+        <li><a href="/painting.shtml">painting</a></li>
+        <li><a href="/papercraft.shtml">papercraft</a></li>
+        </ul>
+    </li>
+        <li><a href="about.shtml">about</a></li>
+    <li><a href="contact.shtml">contact</a></li>
+          
+      </ul>
+    </div>
+</div>
+</nav>
+<!-- Header End-->
 
 <ol class="breadcrumb">
   <li><a href="/index.shtml">home</a></li>
@@ -122,10 +179,33 @@
 </div><!-- end row-->
 
 
-       
-	
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2014 Stefanie St. Germain</p>
+        </footer>
+
+    </div>
 
 
-       
 
-<!--#include virtual="/ssi/footer.html" -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/hisrc.js"></script>
+  <script>
+    $.hisrc.speedTest();
+    $(document).ready(function(){
+      $(".hisrc img").hisrc();
+    });
+  </script>
+  <script>
+    $('a.btn-info').tooltip()
+  </script>
+  <script>
+    $('.carousel-home').carousel({
+      interval: 3000,
+      wrap: true //false to stop on last img
+    });
+  </script>
+
+</body>
+</html>

@@ -30,7 +30,7 @@
          backgroundColor: 'blue'
       }); //end css
    });  //end papercraft button
-   $('#desk-img').hover(function(){
+   $('#desk-closed-img').hover(function(){
    //on hover
       $('#desk-closed-img').attr({
          'src': 'images/desk_closed_150w.png',
@@ -39,7 +39,7 @@
    }, // end mouse over
   function(){
    //off hover
-      $('#desk-closed-img').attr({
+      $('#desk-open-img').attr({
          'src': 'images/desk_open_150w.png',
          'class': 'img-responsive' //does not add to existing so reset everything associate with classes on the image
       }); //end attr

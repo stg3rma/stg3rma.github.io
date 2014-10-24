@@ -1,8 +1,8 @@
 <script>
    $(document).ready(function(){
       console.log("Document loaded!"); //for debugging
-      $('aside').fadeOut(2000).fadeIn(500); //chained functions
-      $('header').slideUp(2000).slideDown(1000);   
+      $('nav').fadeOut(2000).fadeIn(500); //chained functions
+      $('footer').slideUp(2000).slideDown(1000);   
       $('#carousel-home').css({
 	border: "1px solid red",
 	fontSize: "24px"

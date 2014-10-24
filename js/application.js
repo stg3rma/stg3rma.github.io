@@ -30,7 +30,7 @@
          backgroundColor: 'blue'
       }); //end css
    });  //end papercraft button
-   $('#desk-closed-img').hover(function(){
+   $('desk-img').hover(function(){
    //on hover
       $('#desk-closed-img').attr({
          'src': 'images/desk_closed_150w.png',

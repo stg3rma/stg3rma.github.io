@@ -1,4 +1,4 @@
-<script>
+
    $(document).ready(function(){
       console.log("Document loaded!"); //for debugging
       $('nav').fadeOut(2000).fadeIn(500); //chained functions
@@ -13,4 +13,3 @@
        }); //end p css
        $('footer ul li:last, nav ul li:first, aside ul li:last').fadeOut(500).fadeIn(1000);
    }); //end ready
-</script>

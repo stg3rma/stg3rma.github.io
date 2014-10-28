@@ -16,8 +16,6 @@
    //about page education tab under Harvard Extension
       $('#current').addClass( "text-uppercase" );
 
-#collapseThree > div > div > table > tbody > tr:nth-child(1) > td:nth-child(1)
-
    $('#btn-furniture').click(function(){
       console.log('The furniture button was clicked!');
       alert('Nice furniture!');

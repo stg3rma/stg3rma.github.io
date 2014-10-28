@@ -40,7 +40,7 @@
   function(){
    //off hover
       $('#desk-open-img').attr({
-         'src': 'images/desk_open_150w.png',
+         'src': 'images/desk_open_150.fw.png',
          'class': 'img-responsive' //does not add to existing so reset everything associate with classes on the image
       }); //end attr
    

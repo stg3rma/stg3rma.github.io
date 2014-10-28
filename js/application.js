@@ -13,6 +13,11 @@
        }); //end p css
        $('footer ul li:last, nav ul li:first, aside ul li:last').fadeOut(500).fadeIn(1000);
   
+   //about page education tab under Harvard Extension
+      $('#current').addClass( "text-uppercase" );
+
+#collapseThree > div > div > table > tbody > tr:nth-child(1) > td:nth-child(1)
+
    $('#btn-furniture').click(function(){
       console.log('The furniture button was clicked!');
       alert('Nice furniture!');
@@ -33,17 +38,54 @@
    $('#desk-closed-img').hover(function(){
    //on hover
       $('#desk-closed-img').attr({
-         'src': 'images/desk_closed_150w.png',
-         'class': 'img-responsive img-circle' //does not add to existing so reset everything associate with classes on the image
+         'src': 'images/desk_open_150.fw.png',
+         'class': 'media-object img-responsive img-circle' //does not add to existing so reset everything associate with classes on the image
       }); //end attr
    }, // end mouse over
   function(){
    //off hover
-      $('#desk-open-img').attr({
-         'src': 'images/desk_open_150.fw.png',
-         'class': 'img-responsive' //does not add to existing so reset everything associate with classes on the image
+      $('#desk-closed-img').attr({
+         'src': 'images/desk_closed_150w.png',
+         'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
       }); //end attr
-   
    }); //end desk image hover
 
+   //popover on hover on about page interests tab
+   $(function (){ 
+      $("#d3").popover({trigger: "hover",
+      content: "D3!"});      
+   }); 
+      $(function (){ 
+      $("#northren").popover({trigger: "hover",
+      content: "Northern Renaissance"});      
+   });  
+      $(function (){ 
+      $("#processing").popover({trigger: "hover",
+      content: "processing"});      
+   });  
+      $(function (){ 
+      $("#origami").popover({trigger: "hover",
+      content: "origami"});      
+   });  
+      $(function (){ 
+      $("#rhino").popover({trigger: "hover",
+      content: "Rhino3d"});      
+   }); //end popover
+
+
+   //if else based on time of day
+      $(function (){
+       var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+        greeting = "Good morning";
+    } else if (time < 20) {
+        greeting = "Good day";
+    } else {
+        greeting ="Good evening";
+    }
+
+   });//end if/else
    }); //end ready
+
+

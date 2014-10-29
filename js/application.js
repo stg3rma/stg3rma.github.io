@@ -84,6 +84,51 @@
     }
 
    });//end if/else
+
+   //show/hide
+      $('a#showhidepagesetup').click(function() {
+        $('#page-setup').toggle('slow', function(){
+        });
+    }); //end show/hid
+
+    $('.color-choice').click(function() {
+    
+        // Find out what color was clicked
+        var color_selection = $(this).attr('id');
+        console.log("color selected is:" + color_selection); //for debugging
+        // Set the page to be that color
+       $('html').css('background', color_selection);
+        if(color_selection == 'green'){
+          console.log("inside green if");
+          $('html').css({
+         backgroundColor: 'green'
+      }); //end css
+        }
+            
+    });
+    
+   $("#fc").change(function() {
+  
+    $('.change-font').css("font-family", $(this).val());
+    
+    });
+    $("p").change(function() {
+
+        $('.change-font').css("font-size", $(this).val() + "px"); 
+    });
+    $("#fs").change(function() {
+
+        $('.change-font').css("font-size", $(this).val() + "px"); 
+    });
+    $('.img-dimension').click(function() {
+               
+        $('#thumb-img').css("width", $(this).val() + "px"); 
+       
+
+    }); 
+    
+
+  
    }); //end ready
 
 

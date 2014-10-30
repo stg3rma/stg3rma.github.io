@@ -126,7 +126,51 @@
        
 
     }); 
+    //email message subscribe
+    //regex from http://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1
+    $( "#email" ).blur(function() {
     
+            var addr = $(this).val();
+            var emailreg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/; 
+            
+            console.log("if value is" + emailreg.test(addr));
+
+            if (!emailreg.test(addr)) {
+               
+               $('#emailmsg').replaceWith('<p><span class="label label-warning ">Please enter a valid email address</span></p>');
+              console.log("Please enter a valid email address");
+            }
+            if(emailreg.test(addr)){
+                 $('#emailmsg').replaceWith('<p></p>');
+              console.log("valid email, thanks");
+            }
+
+     });//email field focus 
+        var sub;
+        $( "#subscribe" ).change(function() {
+            sub = $(this).val();
+            console.log("sub is: " + sub);
+            if (sub == "yes") {
+              $('#subscribe-label').replaceWith('<p><span class="label label-warning ">Thanks for subscribing!</span></p>');
+              //  alert("Thanks for subscribing");
+            }
+             if (sub =="no") {
+              $('#subscribe-label').replaceWith('<p><span class="label label-warning ">Thanks for subscribing!</span></p>');
+              //  alert("Thanks for subscribing");
+            }
+          });//checkbox
+             $( "#no-subscribe" ).change(function() {
+            sub = $(this).val();
+            console.log("sub is: " + sub);
+            if (sub == "no") {
+              $('#subscribe-label').replaceWith('<p>nbsp&;</p>');
+              //alert("are you sure?");
+            }            if (sub =="yes") {
+              $('#subscribe-label').replaceWith('<p>nbsp&;</p>');
+              //alert("are you sure?");
+            }
+
+     });//checkbox
 
   
    }); //end ready

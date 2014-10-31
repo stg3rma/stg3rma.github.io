@@ -1,6 +1,7 @@
 
    $(document).ready(function(){
       console.log("Document loaded!"); //for debugging
+              $('#page-setup').hide(); //start out hidden
       $('nav').fadeOut(2000).fadeIn(500); //chained functions
       $('footer').slideUp(2000).slideDown(1000);   
       $('#carousel-home').css({
@@ -86,10 +87,12 @@
    });//end if/else
 
    //show/hide
+
+
       $('a#showhidepagesetup').click(function() {
         $('#page-setup').toggle('slow', function(){
         });
-    }); //end show/hid
+    }); //end show/hide
 
     $('.color-choice').click(function() {
     
@@ -97,15 +100,49 @@
         var color_selection = $(this).attr('id');
         console.log("color selected is:" + color_selection); //for debugging
         // Set the page to be that color
-       $('html').css('background', color_selection);
+
+ 
+       //$('html').css({'background', color_selection });
         if(color_selection == 'green'){
           console.log("inside green if");
-          $('html').css({
-         backgroundColor: 'green'
-      }); //end css
+          $('body').css({
+            
+         backgroundColor: "#7A7D45"
+          }); //end css
+        }
+        if(color_selection == 'blue'){
+          console.log("inside blue if");
+          $('body').css({
+           
+         backgroundColor: "#A1AFAE"
+          }); //end css
+        }
+        if(color_selection == 'tan'){
+          console.log("inside tan if");
+          $('body').css({
+           
+         backgroundColor: "#B99B64"
+          }); //end css
+        }
+         if(color_selection == 'gray'){
+          console.log("inside gray if");
+          $('body').css({
+            
+         backgroundColor: "#D5D6DD"
+          }); //end css
+        }
+                 if(color_selection == 'white'){
+          console.log("inside white if");
+          $('body').css({
+            
+         backgroundColor: "#FFF"
+          }); //end css
         }
             
     });
+
+
+
     
    $("#fc").change(function() {
   

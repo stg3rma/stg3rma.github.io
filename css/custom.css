@@ -7,19 +7,23 @@
     border:1px solid black;
 }
 
-#red {    
-    background-color:red;
+#gray {    
+    background-color: #D5D6DD;
 }
 
-#orange {    
-    background-color:orange;
+#tan {    
+    background-color: #B99B64;
 }
 
-#yellow {    
-    background-color:yellow;
+#blue {    
+    background-color: #A1AFAE;
 }
 
 #green {
-    background-color:green;
+    background-color:#7A7D45;
+}
+
+#white{
+   background-color:#FFF;	
 }
 

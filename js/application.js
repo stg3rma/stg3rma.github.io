@@ -34,6 +34,8 @@
          backgroundColor: 'blue'
       }); //end css
    });  //end papercraft button
+
+
    $('#desk-closed-img').hover(function(){
    //on hover
       $('#desk-closed-img').attr({
@@ -49,6 +51,35 @@
       }); //end attr
    }); //end desk image hover
 
+ $('#table-img').hover(function(){
+   //on hover
+      $('#table-img').attr({
+         'src': 'images/demilune_table_150w.png',
+         'class': 'media-object img-responsive img-circle' //does not add to existing so reset everything associate with classes on the image
+      }); //end attr
+   }, // end mouse over
+  function(){
+   //off hover images/demilune_table_150w.png
+      $('#table-img').attr({
+         'src': 'images/demilune_table_150w.png',
+         'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
+      }); //end attr
+   }); //end desk image hover
+
+  $('#armchair-img').hover(function(){
+   //on hover
+      $('#armchair-img').attr({
+         'src': 'images/armchair_150w.png',
+         'class': 'media-object img-responsive img-circle' //does not add to existing so reset everything associate with classes on the image
+      }); //end attr
+   }, // end mouse over
+  function(){
+   //off hover
+      $('#armchair-img').attr({
+         'src': 'images/armchair_150w.png',
+         'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
+      }); //end attr
+   }); //end desk image hover
    //popover on hover on about page interests tab
    $(function (){ 
       $("#d3").popover({trigger: "hover",
@@ -158,9 +189,10 @@
         $('.change-font').css("font-size", $(this).val() + "px"); 
     });
     $('.img-dimension').click(function() {
-               
+               $('#thumb-img3').css("width", $(this).val() + "px"); 
         $('#thumb-img').css("width", $(this).val() + "px"); 
-       
+        $('#thumb-img2').css("width", $(this).val() + "px"); 
+        
 
     }); 
     //email message subscribe
@@ -180,10 +212,6 @@
                         submit.preventDefault();
               console.log("Please enter a valid email address");
             }
-            
-
-            
-
      });//email field focus 
 
 
@@ -292,7 +320,9 @@
                         }); // end attr
                         submit.preventDefault();
 
-                } else {
+                }
+                
+                 else {
                         $('#confirmationModal').modal();
                         submit.preventDefault();
                 }

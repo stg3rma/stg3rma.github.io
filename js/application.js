@@ -173,16 +173,24 @@
             console.log("if value is" + emailreg.test(addr));
 
             if (!emailreg.test(addr)) {
-               
-               $('#emailmsg').replaceWith('<p><span class="label label-warning ">Please enter a valid email address</span></p>');
+               $('.email-group .help-block').text('Please enter a valid email address.');
+                        $('.email-group').attr({
+                                class: 'col-md-6 form-group email-group has-error'
+                        }); // end attr
+                        submit.preventDefault();
               console.log("Please enter a valid email address");
             }
-            if(emailreg.test(addr)){
-                 $('#emailmsg').replaceWith('<p></p>');
-              console.log("valid email, thanks");
-            }
+            
+
+            
 
      });//email field focus 
+
+
+
+
+
+
         var sub;
         $( "#subscribe" ).change(function() {
             sub = $(this).val();
@@ -209,7 +217,86 @@
 
      });//checkbox
 
-  
+           $('#project').change(function(){
+                if ($('#project').val() == 'furniture') {
+                                $('.project-group .help-block').text('Thanks for your interest in my furniture');
+                        } else if ($('#project').val() == 'painting') 
+                        {
+                                $('.project-group .help-block').text('Thanks for your interest in my paintings');
+                        } else ($('#project').val() == 'papercraft') 
+                        {
+                                $('.project-group .help-block').text('Thanks for your interest in my papercraft');
+                        } 
+
+        }); //end change
+
+        $('#name').focusout(function(){
+                if($('#name').val().length == 0) {
+                        $('.name-group .help-block').text('Please enter your name.');
+                        $('.name-group').attr({
+                                class: 'col-md-6 form-group name-group has-error'
+                        }); // end attr
+                } else {
+                        $('.name-group .help-block').text('');
+                        $('.name-group').attr({
+                                class: 'col-md-6 form-group name-group'
+                        }); //end attr
+                }
+        }); //end focus out
+        $('#email').focusout(function(){
+                if($('#email').val().length == 0) {
+                        $('.email-group .help-block').text('Please enter your email.');
+                        $('.email-group').attr({
+                                class: 'col-md-6 form-group email-group has-error'
+                        }); // end attr
+                } else {
+                        $('.email-group .help-block').text('');
+                        $('.email-group').attr({
+                                class: 'col-md-6 form-group email-group'
+                        }); //end attr
+                }
+        }); //end focus out
+        $('#message').focusout(function(){
+                if($('#message').val().length == 0) {
+                        $('.message-group .help-block').text('Please enter a message.');
+                        $('.message-group').attr({
+                                class: 'col-md-6 form-group message-group has-error'
+                        }); // end attr
+                } else {
+                        $('.message-group .help-block').text('');
+                        $('.message-group').attr({
+                                class: 'col-md-6 form-group message-group'
+                        }); //end attr
+                }
+        }); //end focus out
+
+        $('button').click(function(submit){
+                if($('#name').val().length == 0) {
+                        $('.name-group .help-block').text('Please enter your name.');
+                        $('.name-group').attr({
+                                class: 'col-md-6 form-group name-group has-error'
+                        }); // end attr
+                        submit.preventDefault();
+                }
+                else if($('#email').val().length == 0) {
+                        $('.email-group .help-block').text('Please enter your email.');
+                        $('.email-group').attr({
+                                class: 'col-md-6 form-group email-group has-error'
+                        }); // end attr
+                        submit.preventDefault();
+                }      
+                else if($('#message').val().length == 0) {
+                        $('.message-group .help-block').text('Please enter a message.');
+                        $('.message-group').attr({
+                                class: 'col-md-6 form-group message-group has-error'
+                        }); // end attr
+                        submit.preventDefault();
+
+                } else {
+                        $('#confirmationModal').modal();
+                        submit.preventDefault();
+                }
+        }); //end click
    }); //end ready
 
 

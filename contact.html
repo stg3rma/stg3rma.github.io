@@ -69,6 +69,7 @@
 
 		 <div class="col-xs-12 col-md-6">  
 			<h3>Contact Stefanie</h3>
+      <h4 class="justified" id="contact-msg">Please feel free to contact me with any questions or comments. </h4>
 			<form ACTION="/cgi-sys/formmail.cgi" METHOD="POST" role="form">
 			<input type=hidden name="recipient" value="contact@stefaniestgermain.org"> 
 			<input type=hidden name="subject" value="stefaniestgermain.org mail"> 
@@ -114,26 +115,32 @@
             </div>
          </div>
   <div class="row">
-      <div class=" col-xs-12 col-md-6 form-group list-group ">
-      <fieldset>
-       <label for="subscribe" class="control-label">Mailing List Option: </label>
-       <div class="radio">
-          <label for="optionsRadios1">
-          <input id="subscribe" type="radio" name="optionsRadios" id="optionsRadios1" value="yes" checked> Yes, subscribe me
-       </label>
+   
+        <div class=" col-xs-12 col-md-6 form-group subscribe-group "> 
+         <label for="subscribe" class="control-label">Mailing List Option: </label>
+       
+  <div class="row">
+      
+           <div class="radio ">
+              <label for="optionsRadios1">
+              <input id="subscribe" type="radio" name="optionsRadios" id="optionsRadios1" value="yes" checked> Yes, subscribe me
+              </label>
+          
+      
+     
+         <div class="radio  ">
+            <label for="optionsRadios2">
+            <input id="no-subscribe" type="radio" name="optionsRadios" id="optionsRadios2" checked value="no">
+            No, not at this time
+          </label>
+          <label id="subscribe-label"> </label>
+          </div>
+        
+          <span class="help-block"></span>
       </div>
-       <div class="radio">
-          <label for="optionsRadios2">
-          <input id="no-subscribe" type="radio" name="optionsRadios" id="optionsRadios2" checked value="no">
-          No, not at this time
-        </label>
-        <label id="subscribe-label"> </label>
-        </div>
-        </fieldset>
-        <span class="help-block"></span>
-      </div>
-		</div>
-
+     </div>
+	</div>
+</div>
 
 
 	<button type="submit" class="btn btn-default">Submit </button>
@@ -142,9 +149,9 @@
 	     </div>
 		 <div class="col-xs-1 col-md-2"></div>  
 		<div class="col-xs-11 col-md-4">
-			<aside>
-				<span class="glyphicon glyphicon-envelope glyphicon-contact hidden-xs hidden-sm "></span>
-				<p class="justified" id="contact-msg">Please feel free to contact me with any questions or comments. </p>
+			<aside >
+				<span id="envelope" class="glyphicon glyphicon-envelope glyphicon-contact hidden-xs hidden-sm "></span>
+				
 			</aside>
 		 </div>
         </div>

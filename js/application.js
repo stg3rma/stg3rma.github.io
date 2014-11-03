@@ -1,16 +1,16 @@
 
    $(document).ready(function(){
       console.log("Document loaded!"); //for debugging
-              $('#page-setup').hide(); //start out hidden
-      $('nav').fadeOut(2000).fadeIn(500); //chained functions
-      $('footer').slideUp(2000).slideDown(1000);   
+      $('#page-setup').hide(); //start out hidden
+      $('nav').fadeOut(1000).fadeIn(500); //chained functions
+      
       $('#carousel-home').css({
 	border: "1px solid red",
 	fontSize: "24px"
       }); //end #menu css
       $('p:even').css({
-	color: "white",
-	backgroundColor: "green"
+	 fontWeight: "800"
+	//backgroundColor: "green"
        }); //end p css
        $('footer ul li:last, nav ul li:first, aside ul li:last').fadeOut(500).fadeIn(1000);
   
@@ -118,7 +118,7 @@
    });//end if/else
 
    //show/hide
-
+    
 
       $('a#showhidepagesetup').click(function() {
         $('#page-setup').toggle('slow', function(){
@@ -176,18 +176,15 @@
 
     
    $("#fc").change(function() {
-  
+    $('body').css("font-family", $(this).val());
     $('.change-font').css("font-family", $(this).val());
     
     });
-    $("p").change(function() {
-
-        $('.change-font').css("font-size", $(this).val() + "px"); 
-    });
     $("#fs").change(function() {
-
+        $('body').css("font-size", $(this).val() + "px");
         $('.change-font').css("font-size", $(this).val() + "px"); 
     });
+
     $('.img-dimension').click(function() {
                $('#thumb-img3').css("width", $(this).val() + "px"); 
         $('#thumb-img').css("width", $(this).val() + "px"); 
@@ -224,11 +221,11 @@
             sub = $(this).val();
             console.log("sub is: " + sub);
             if (sub == "yes") {
-              $('#subscribe-label').replaceWith('<p><span class="label label-warning ">Thanks for subscribing!</span></p>');
+              $('.subscribe-group .help-block').text('Thanks for subscribing!');
               //  alert("Thanks for subscribing");
             }
              if (sub =="no") {
-              $('#subscribe-label').replaceWith('<p><span class="label label-warning ">Thanks for subscribing!</span></p>');
+              $('.subscribe-group .help-block').text('Perhaps another time!');
               //  alert("Thanks for subscribing");
             }
           });//checkbox
@@ -236,14 +233,29 @@
             sub = $(this).val();
             console.log("sub is: " + sub);
             if (sub == "no") {
-              $('#subscribe-label').replaceWith('<p>nbsp&;</p>');
+               $('.subscribe-group .help-block').text('Perhaps another time!');
               //alert("are you sure?");
             }            if (sub =="yes") {
-              $('#subscribe-label').replaceWith('<p>nbsp&;</p>');
+               $('.subscribe-group .help-block').text('Thanks for subscribing!');
               //alert("are you sure?");
             }
 
      });//checkbox
+              $('#subscribe').focusout(function(){
+                sub = $(this).val();
+            console.log("sub is: " + sub);
+            if (sub == "yes") {
+                        $('.subscribe-group .help-block').text('');
+                        $('.name-group').attr({
+                                class: 'col-md-6 form-group subcribe-group has-error'
+                        }); // end attr
+                } if (sub == "no")  {
+                        $('.subscribe-group .help-block').text('');
+                        $('.subscribe-group').attr({
+                                class: 'col-md-6 form-group subscribe-group'
+                        }); //end attr
+                }
+        }); //end focus out
 
            $('#project').change(function(){
                 if ($('#project').val() == 'furniture') {
@@ -323,9 +335,15 @@
                 }
                 
                  else {
+                           $('#envelope').animate({ 
+                               left: '400px' ,   
+      opacity:'0.3',
+      height:'250px',
+      width:'250px'});
+                }
                         $('#confirmationModal').modal();
                         submit.preventDefault();
-                }
+
         }); //end click
    }); //end ready
 

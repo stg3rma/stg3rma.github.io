@@ -1,0 +1,69 @@
+
+Build a form for your website with at least two jQuery-driven interactive elements. The form does not need to submit.
+If you already have a contact page on your site, you may add the form to this page, or replace the content currently there with this page.
+If you don’t have a contact page for your site, this might be a good place to add a form.
+Want to add a form somewhere else on your site? Fine with me, provided it fills the requirements. (thank you message on submit, reminder what goes in field when click into it, ie: Please provid valid email)
+
+Add at least one click effect to your site. When clicked, at least two actions should occur. This effect should be independent of the form.
+(image gallery page? Click on thumbnail +/- will change dimension or possible show/hide for additional info about a piece )
+
+Add at least one hover effect to your site. When the element is hovered over, at least two actions should occur. The page should restore itself to its previous look/behavior when the mouse rolls off the element. This effect should be independent of the form. (desk picture toggles from open to closed version of image)
+
+Add at least one effect that is tied to an if/else choice. You may combine this with any of the other items here on the page. For example, the if/else occurs in your form with one of the two interactive elements required for the form. (if all form fields are filled in show thank you message if not say which one needs to be filled in)
+
+Add at least one effect that requires filtering the results. You may combine this with any of the other items here on the page. For example, the filtering occurs in your click effect along with the two actions. (Hint: every other line is displayed with different styling. Think shaded lines in a spreadsheet, or different looking list items.) (on about page highlight complete course one color and ones in progress another)
+
+Add two more effects of your choice to the page. These can occur when the page loads, via click, via hover, or via one of the other events in jQuery.
+(announcement banner that you click to close; change which carousel images is displayed first; popup image or link with interests page)
+
+HTML and CSS should pass validation as much as possible.  This will also keep your jQuery executing correctly.
+Post all files to GitHub.
+Post the final website on GitHub Pages.
+What Jen Cares About
+
+You follow the instructions. That includes “How to Turn In The Assignment”, below. Note that students who did not follow instructions about how to turn in the assignment last time got an F. Instructions are listed because we need to streamline the grading process as much as possible.
+Your code works.
+You demonstrate mastery of jQuery syntax, if/else statements, events, selections, filtering, and everything else covered in lecture.
+What Jen Doesn't Care About
+
+Your graphic design and color matching abilities/inabilities don’t matter to me. Neither does your ability/inability to make pretty pictures.
+I don’t care if you’ve changed your website from the way it was when you turned it in for previous assignments.
+This is a jQuery assignment. The point is that when an event occurs, you select something, optionally filter it, and then do something to it. It’s quite possible that your clicks and hovers will be silly and frivolous, things that you might never do in real life, or even things that might not necessarily be the best user experience. THAT IS OK. The point is to show you understand how to do a little programming with jQuery.  We will be using jQuery for the rest of the course, so it’s important to have a good understanding of this.
+How to turn in your assignment
+
+Turn your assignment in via the Assignments link.
+
+In the text file, please complete the following:
+
+Paste the URL for the home page of your website, which should be at GitHub Pages:
+http://stg3rma.github.io/
+Post a link to the GitHub repository of your files as well:
+https://github.com/stg3rma/stg3rma.github.io
+
+My two jQuery-driven interactive elements in the form include: 
+Name, Email and Message are required fields. Click in an help will ask user to enter the information. Select an item from the dropdown or radio set for subscribe and a message will appear thanking user.
+and it is located at this URL: http://stg3rma.github.io/contact.html
+
+My site’s click effect is:
+When the required fields (name, email & message) on the contact form are filled out and the form is submitted the blue envelope glyphicon is animated off the page to the right and increase in transparency then a modal window pops up with a thank you message.
+and it is located at this URL: http://stg3rma.github.io/contact.html
+
+My site’s hover effect is:
+hover over any of the images and the image treatement changes from Bootstrap's img-rounded to img-circle. For the image of the desk, the image will change to a version of the desk with the slant-front open.
+and it is located at this URL: http://stg3rma.github.io/furniture.html
+When you hover over the list items on http://stg3rma.github.io/about.html on the interests tab a Bootstrap popover appears.
+When you hover over the papercraft button on the home page it turn green then blue
+
+My if/else choice is: 
+Email is a required field on the contact form. I additional added a reqex expression to check if the text entered is a valid email address. If is not a message displays asking the user to enter a valid email. 
+and it is located at this URL: http://stg3rma.github.io/contact.html
+
+My effect that requires filtering the results is: For even paragraphs the font weight is 800. You can see this in the asides on these pages: http://stg3rma.github.io/furniture.html, http://stg3rma.github.io/papercraft.html.
+
+Two more effects of my choice are: 
+If class listing has id 'active' - add class to make the text uppercase - Education tab > Harvard Extension School on http://stg3rma.github.io/about.html
+The navbar fades in and out on page load - http://stg3rma.github.io/index.html
+and it is located at this URL: ____
+If you click on the 'customize page' button in the footer of the home page (http://stg3rma.github.io/index.html) it toggles a menu panel with options to change the background color of the page, the font use on the page and the size of the font,
+
+In the footer of the papercraft page (http://stg3rma.github.io/papercraft.html) when you click on the 'change image size' button it toggles a menu panel with a dropdown for changing the dimensions of the papercraft images by passing in and altering the height and width of the images.

@@ -19,7 +19,7 @@
 
    $('#btn-furniture').click(function(){
       console.log('The furniture button was clicked!');
-      alert('Nice furniture!');
+      //alert('Nice furniture!');
    });  //end furniture click
  
    //hover 2 parts: what happens when mouse is over and what happens when goes out  
@@ -31,7 +31,7 @@
    }, function(){
       console.log('The papercraft button was left behind');
       $('#btn-papercraft').css({
-         backgroundColor: 'blue'
+         backgroundColor: '#406597'
       }); //end css
    });  //end papercraft button
 
@@ -87,7 +87,7 @@
    }); 
       $(function (){ 
       $("#northren").popover({trigger: "hover",
-      content: "Northern Renaissance"});      
+      content: "<"Northern Renaissance"});      
    });  
       $(function (){ 
       $("#processing").popover({trigger: "hover",

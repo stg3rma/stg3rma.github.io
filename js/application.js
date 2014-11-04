@@ -31,7 +31,8 @@
    }, function(){
       console.log('The papercraft button was left behind');
       $('#btn-papercraft').css({
-         backgroundColor: '#406597'
+         backgroundColor: '#5bc0de',
+         borderColor: '#46b8da'
       }); //end css
    });  //end papercraft button
 
@@ -108,13 +109,13 @@
        var greeting;
     var time = new Date().getHours();
     if (time < 10) {
-        greeting = "Good morning";
+        greeting = "Good morning! ";
     } else if (time < 20) {
-        greeting = "Good day";
+        greeting = "Good day! ";
     } else {
-        greeting ="Good evening";
+        greeting ="Good evening! ";
     }
-
+    $('#contact-msg').prepend(greeting);
    });//end if/else
 
    //show/hide
@@ -337,12 +338,13 @@
                  else {
                            $('#envelope').animate({ 
                                left: '400px' ,   
-      opacity:'0.3',
-      height:'250px',
-      width:'250px'});
-                }
+                               opacity:'0.3',
+                               height:'250px',
+                               width:'250px'});
+               
                         $('#confirmationModal').modal();
                         submit.preventDefault();
+                 }
 
         }); //end click
    }); //end ready

@@ -87,7 +87,7 @@
    }); 
       $(function (){ 
       $("#northren").popover({trigger: "hover",
-      content: "<"Northern Renaissance"});      
+      content: "Northern Renaissance"});      
    });  
       $(function (){ 
       $("#processing").popover({trigger: "hover",

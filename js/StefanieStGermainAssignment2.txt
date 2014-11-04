@@ -1,3 +1,6 @@
+DGMD E-20 - Assignment2
+Stefanie St. Germain
+
 Paste the URL for the home page of your website, which should be at GitHub Pages:
 http://stg3rma.github.io/
 

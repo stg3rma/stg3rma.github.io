@@ -48,7 +48,7 @@
    //off hover
       $('#desk-closed-img').attr({
          'src': 'images/desk_closed_150w.png',
-         'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
+         'class': 'media-object img-responsive img-rounded' 
       }); //end attr
    }); //end desk image hover
 
@@ -56,14 +56,14 @@
    //on hover
       $('#table-img').attr({
          'src': 'images/demilune_table_150w.png',
-         'class': 'media-object img-responsive img-circle' //does not add to existing so reset everything associate with classes on the image
+         'class': 'media-object img-responsive img-circle' 
       }); //end attr
    }, // end mouse over
   function(){
    //off hover images/demilune_table_150w.png
       $('#table-img').attr({
          'src': 'images/demilune_table_150w.png',
-         'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
+         'class': 'media-object img-responsive img-rounded' 
       }); //end attr
    }); //end desk image hover
 
@@ -81,6 +81,7 @@
          'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
       }); //end attr
    }); //end desk image hover
+
    //popover on hover on about page interests tab
    $(function (){ 
       $("#d3").popover({trigger: "hover",
@@ -104,7 +105,7 @@
    }); //end popover
 
 
-   //if else based on time of day
+   //if else based on time of day on contact page
       $(function (){
        var greeting;
     var time = new Date().getHours();
@@ -118,9 +119,9 @@
     $('#contact-msg').prepend(greeting);
    });//end if/else
 
-   //show/hide
+   
     
-
+     //show/hide menu panel
       $('a#showhidepagesetup').click(function() {
         $('#page-setup').toggle('slow', function(){
         });
@@ -173,10 +174,8 @@
             
     });
 
-
-
     
-   $("#fc").change(function() {
+    $("#fc").change(function() {
     $('body').css("font-family", $(this).val());
     $('.change-font').css("font-family", $(this).val());
     
@@ -190,33 +189,9 @@
                $('#thumb-img3').css("width", $(this).val() + "px"); 
         $('#thumb-img').css("width", $(this).val() + "px"); 
         $('#thumb-img2').css("width", $(this).val() + "px"); 
-        
-
     }); 
-    //email message subscribe
-    //regex from http://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1
-    $( "#email" ).blur(function() {
     
-            var addr = $(this).val();
-            var emailreg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/; 
-            
-            console.log("if value is" + emailreg.test(addr));
-
-            if (!emailreg.test(addr)) {
-               $('.email-group .help-block').text('Please enter a valid email address.');
-                        $('.email-group').attr({
-                                class: 'col-md-6 form-group email-group has-error'
-                        }); // end attr
-                        submit.preventDefault();
-              console.log("Please enter a valid email address");
-            }
-     });//email field focus 
-
-
-
-
-
-
+        //contact form
         var sub;
         $( "#subscribe" ).change(function() {
             sub = $(this).val();
@@ -310,6 +285,25 @@
                         }); //end attr
                 }
         }); //end focus out
+
+         //email message subscribe
+         //regex from http://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1
+            $( "#email" ).blur(function() {
+                
+                        var addr = $(this).val();
+                        var emailreg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/; 
+                        
+                        console.log("if value is" + emailreg.test(addr));
+
+                      if (!emailreg.test(addr)) {
+                           $('.email-group .help-block').text('Please enter a valid email address.');
+                                    $('.email-group').attr({
+                                            class: 'col-md-6 form-group email-group has-error'
+                                    }); // end attr
+                                    submit.preventDefault();
+                          console.log("Please enter a valid email address");
+                        }
+                 });
 
         $('button').click(function(submit){
                 if($('#name').val().length == 0) {

@@ -286,26 +286,15 @@
                 }
         }); //end focus out
 
-         //email message subscribe
-         //regex from http://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1
-            $( "#email" ).blur(function() {
-                
-                        var addr = $(this).val();
-                        var emailreg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/; 
-                        
-                        console.log("if value is" + emailreg.test(addr));
-
-                      if (!emailreg.test(addr)) {
-                           $('.email-group .help-block').text('Please enter a valid email address.');
-                                    $('.email-group').attr({
-                                            class: 'col-md-6 form-group email-group has-error'
-                                    }); // end attr
-                                    submit.preventDefault();
-                          console.log("Please enter a valid email address");
-                        }
-                 });
 
         $('button').click(function(submit){
+                //email message subscribe
+                //regex from http://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1
+
+                var addr = $('#email').val();
+                var emailreg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/; 
+                console.log("if value is" + emailreg.test(addr));
+
                 if($('#name').val().length == 0) {
                         $('.name-group .help-block').text('Please enter your name.');
                         $('.name-group').attr({
@@ -318,8 +307,17 @@
                         $('.email-group').attr({
                                 class: 'col-md-6 form-group email-group has-error'
                         }); // end attr
+
                         submit.preventDefault();
-                }      
+                }  
+                  else   if (!emailreg.test(addr)) {
+                           $('.email-group .help-block').text('Please enter a valid email address.');
+                                    $('.email-group').attr({
+                                            class: 'col-md-6 form-group email-group has-error'
+                                    }); // end attr
+                                    submit.preventDefault();
+                          console.log("Please enter a valid email address");
+                        }    
                 else if($('#message').val().length == 0) {
                         $('.message-group .help-block').text('Please enter a message.');
                         $('.message-group').attr({

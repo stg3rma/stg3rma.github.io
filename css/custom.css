@@ -27,3 +27,8 @@
    background-color:#FFF;	
 }
 
+ canvas {
+   border: 2px dotted black; 
+}
+       
+

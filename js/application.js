@@ -1,16 +1,16 @@
 
    $(document).ready(function(){
       console.log("Document loaded!"); //for debugging
-              $('#page-setup').hide(); //start out hidden
-      $('nav').fadeOut(2000).fadeIn(500); //chained functions
-      $('footer').slideUp(2000).slideDown(1000);   
+      $('#page-setup').hide(); //start out hidden
+      $('nav').fadeOut(1000).fadeIn(500); //chained functions
+      
       $('#carousel-home').css({
 	border: "1px solid red",
 	fontSize: "24px"
       }); //end #menu css
       $('p:even').css({
-	color: "white",
-	backgroundColor: "green"
+	 fontWeight: "800"
+	//backgroundColor: "green"
        }); //end p css
        $('footer ul li:last, nav ul li:first, aside ul li:last').fadeOut(500).fadeIn(1000);
   
@@ -19,7 +19,7 @@
 
    $('#btn-furniture').click(function(){
       console.log('The furniture button was clicked!');
-      alert('Nice furniture!');
+      //alert('Nice furniture!');
    });  //end furniture click
  
    //hover 2 parts: what happens when mouse is over and what happens when goes out  
@@ -31,7 +31,8 @@
    }, function(){
       console.log('The papercraft button was left behind');
       $('#btn-papercraft').css({
-         backgroundColor: 'blue'
+         backgroundColor: '#5bc0de',
+         borderColor: '#46b8da'
       }); //end css
    });  //end papercraft button
 
@@ -47,7 +48,7 @@
    //off hover
       $('#desk-closed-img').attr({
          'src': 'images/desk_closed_150w.png',
-         'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
+         'class': 'media-object img-responsive img-rounded' 
       }); //end attr
    }); //end desk image hover
 
@@ -55,14 +56,14 @@
    //on hover
       $('#table-img').attr({
          'src': 'images/demilune_table_150w.png',
-         'class': 'media-object img-responsive img-circle' //does not add to existing so reset everything associate with classes on the image
+         'class': 'media-object img-responsive img-circle' 
       }); //end attr
    }, // end mouse over
   function(){
    //off hover images/demilune_table_150w.png
       $('#table-img').attr({
          'src': 'images/demilune_table_150w.png',
-         'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
+         'class': 'media-object img-responsive img-rounded' 
       }); //end attr
    }); //end desk image hover
 
@@ -80,6 +81,7 @@
          'class': 'media-object img-responsive img-rounded' //does not add to existing so reset everything associate with classes on the image
       }); //end attr
    }); //end desk image hover
+
    //popover on hover on about page interests tab
    $(function (){ 
       $("#d3").popover({trigger: "hover",
@@ -103,23 +105,23 @@
    }); //end popover
 
 
-   //if else based on time of day
+   //if else based on time of day on contact page
       $(function (){
        var greeting;
     var time = new Date().getHours();
     if (time < 10) {
-        greeting = "Good morning";
+        greeting = "Good morning! ";
     } else if (time < 20) {
-        greeting = "Good day";
+        greeting = "Good day! ";
     } else {
-        greeting ="Good evening";
+        greeting ="Good evening! ";
     }
-
+    $('#contact-msg').prepend(greeting);
    });//end if/else
 
-   //show/hide
-
-
+   
+    
+     //show/hide menu panel
       $('a#showhidepagesetup').click(function() {
         $('#page-setup').toggle('slow', function(){
         });
@@ -172,63 +174,34 @@
             
     });
 
-
-
     
-   $("#fc").change(function() {
-  
+    $("#fc").change(function() {
+    $('body').css("font-family", $(this).val());
     $('.change-font').css("font-family", $(this).val());
     
     });
-    $("p").change(function() {
-
-        $('.change-font').css("font-size", $(this).val() + "px"); 
-    });
     $("#fs").change(function() {
-
+        $('body').css("font-size", $(this).val() + "px");
         $('.change-font').css("font-size", $(this).val() + "px"); 
     });
+
     $('.img-dimension').click(function() {
                $('#thumb-img3').css("width", $(this).val() + "px"); 
         $('#thumb-img').css("width", $(this).val() + "px"); 
         $('#thumb-img2').css("width", $(this).val() + "px"); 
-        
-
     }); 
-    //email message subscribe
-    //regex from http://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1
-    $( "#email" ).blur(function() {
     
-            var addr = $(this).val();
-            var emailreg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/; 
-            
-            console.log("if value is" + emailreg.test(addr));
-
-            if (!emailreg.test(addr)) {
-               $('.email-group .help-block').text('Please enter a valid email address.');
-                        $('.email-group').attr({
-                                class: 'col-md-6 form-group email-group has-error'
-                        }); // end attr
-                        submit.preventDefault();
-              console.log("Please enter a valid email address");
-            }
-     });//email field focus 
-
-
-
-
-
-
+        //contact form
         var sub;
         $( "#subscribe" ).change(function() {
             sub = $(this).val();
             console.log("sub is: " + sub);
             if (sub == "yes") {
-              $('#subscribe-label').replaceWith('<p><span class="label label-warning ">Thanks for subscribing!</span></p>');
+              $('.subscribe-group .help-block').text('Thanks for subscribing!');
               //  alert("Thanks for subscribing");
             }
              if (sub =="no") {
-              $('#subscribe-label').replaceWith('<p><span class="label label-warning ">Thanks for subscribing!</span></p>');
+              $('.subscribe-group .help-block').text('Perhaps another time!');
               //  alert("Thanks for subscribing");
             }
           });//checkbox
@@ -236,14 +209,29 @@
             sub = $(this).val();
             console.log("sub is: " + sub);
             if (sub == "no") {
-              $('#subscribe-label').replaceWith('<p>nbsp&;</p>');
+               $('.subscribe-group .help-block').text('Perhaps another time!');
               //alert("are you sure?");
             }            if (sub =="yes") {
-              $('#subscribe-label').replaceWith('<p>nbsp&;</p>');
+               $('.subscribe-group .help-block').text('Thanks for subscribing!');
               //alert("are you sure?");
             }
 
      });//checkbox
+              $('#subscribe').focusout(function(){
+                sub = $(this).val();
+            console.log("sub is: " + sub);
+            if (sub == "yes") {
+                        $('.subscribe-group .help-block').text('');
+                        $('.name-group').attr({
+                                class: 'col-md-6 form-group subcribe-group has-error'
+                        }); // end attr
+                } if (sub == "no")  {
+                        $('.subscribe-group .help-block').text('');
+                        $('.subscribe-group').attr({
+                                class: 'col-md-6 form-group subscribe-group'
+                        }); //end attr
+                }
+        }); //end focus out
 
            $('#project').change(function(){
                 if ($('#project').val() == 'furniture') {
@@ -298,7 +286,15 @@
                 }
         }); //end focus out
 
+
         $('button').click(function(submit){
+                //email message subscribe
+                //regex from http://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1
+
+                var addr = $('#email').val();
+                var emailreg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/; 
+                console.log("if value is" + emailreg.test(addr));
+
                 if($('#name').val().length == 0) {
                         $('.name-group .help-block').text('Please enter your name.');
                         $('.name-group').attr({
@@ -311,8 +307,17 @@
                         $('.email-group').attr({
                                 class: 'col-md-6 form-group email-group has-error'
                         }); // end attr
+
                         submit.preventDefault();
-                }      
+                }  
+                  else   if (!emailreg.test(addr)) {
+                           $('.email-group .help-block').text('Please enter a valid email address.');
+                                    $('.email-group').attr({
+                                            class: 'col-md-6 form-group email-group has-error'
+                                    }); // end attr
+                                    submit.preventDefault();
+                          console.log("Please enter a valid email address");
+                        }    
                 else if($('#message').val().length == 0) {
                         $('.message-group .help-block').text('Please enter a message.');
                         $('.message-group').attr({
@@ -323,9 +328,16 @@
                 }
                 
                  else {
+                           $('#envelope').animate({ 
+                               left: '400px' ,   
+                               opacity:'0.3',
+                               height:'250px',
+                               width:'250px'});
+               
                         $('#confirmationModal').modal();
                         submit.preventDefault();
-                }
+                 }
+
         }); //end click
     
 

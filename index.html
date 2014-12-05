@@ -2,10 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>St Germain E-20</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="themes/ss_them.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
     <link href="css/custom.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> 
@@ -24,39 +26,47 @@
 </head>
 
 <body>
-<div class="container">
-    <nav class="navbar navbar-inverse navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="glyphicon glyphicon-list"></span>
-    MENU
-      </button>
-      <a class="navbar-brand" href="/index.html">Stefanie St. Germain</a>
-    </div>
+<!-- Home Page-->
+   <section data-role="page" id="home" data-theme="c">
+  	<header data-role="header" data-position="fixed">
+      <div data-role="tabs" id="tabs">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-ajax="false">home</a></li>
+            <li><a href="#projects" data-ajax="false">projects</a></li>
+            <li><a href="#about"  data-ajax="false">about</a></li>
+            <li><a href="#contact" data-ajax="false">contact</a></li>
+          </ul>
+        </div>
+        <div id="home" class="ui-body-d ui-content">
+          <h1>First tab contents</h1>
+        </div>
+        <div id="projects">
+          <ul data-role="listview" data-inset="true">
+              <li><a href="#furniture">furniture</a></li>
+              <li><a href="#">papercraft</a></li>
+              <li><a href="#">painting</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">projects<span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-        <li><a href="/furniture.html">furniture</a></li>
-        <li><a href="/painting.html">painting</a></li>
-        <li><a href="/papercraft.html">papercraft</a></li>
-        </ul>
-    </li>
-        <li><a href="about.html">about</a></li>
-    <li><a href="contact.html">contact</a></li>
-          
-      </ul>
-    </div>
-</div>
-</nav>
-<!-- Header End-->
 
+    	<main data-role="main" class="ui-content">
+            <div class="ui-corner-all custom-corners" data-theme="c">
+			                <div class="ui-bar ui-bar-a">
+							                <div class="ui-bar ui-bar-a">
+                    <h3>Fruit is delicious</h3>
+                </div>
+                <div class="ui-grid-a ui-body ui-body-a">
+                    <div class="ui-block-a">
+                		<p>Fruit makes a great snack, or slice it up and eat it with a meal. Portable, sweet, and filling, you can take fruit anywhere, even to a Bootstrap workshop!</p>
+                    </div>
+                    <div class="ui-block-b">
+            		  <img src="img/fruit-500.jpg" alt="yummy fruit!">
+                    </div>
+                </div>
+            </div>
 <!-- home page carousel start -->		
 <div id="carousel-home " class="carousel slide" data-ride="carousel">
 
@@ -99,95 +109,327 @@
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
-<!-- home page carousel end -->
-
+      </main>
+        <footer data-role="footer">
+            <p>Up & Running with Bootstrap Workshop. &copy; 2014 Jen Kramer. All rights reserved.</p>
+        </footer>
+    </section>
+<!-- furniture page-->
+ <section data-role="page" id="furniture" data-theme="c">
+    <header data-role="header" data-position="fixed">
+      <div data-role="tabs" id="tabs">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-ajax="false">home</a></li>
+            <li><a href="#projects" data-ajax="false">projects</a></li>
+            <li><a href="#about"  data-ajax="false">about</a></li>
+            <li><a href="#contact" data-ajax="false">contact</a></li>
+          </ul>
+        </div>
+        <div id="home" class="ui-body-d ui-content">
+          <h1>First tab contents</h1>
+        </div>
+        <div id="projects">
+          <ul data-role="listview" data-inset="true">
+              <li><a href="#furniture">furniture</a></li>
+              <li><a href="#">papercraft</a></li>
+              <li><a href="#">painting</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+      <main data-role="main" class="ui-content">
+  <div class="jumbotron jumbotron-project" >
+          <div class="container">  
+            <div class="col-md-12">
+                <h2 class="featurette-heading"><span class="text-muted">furniture</span></h2>
+                <p class="lead ">The table, chair and desk below were completed while a student in the two year Cabinet and Furniture Making program at the North Bennet Street School in Boston's North End.</p>
+            </div>
+      </div>
+        </div>
         <hr>
         <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img id="thumb-img" class="img-responsive" src="images/demilune_table_300x300.png" alt="">
-                    <div class="caption">
-                        <h3>Furniture</h3> 
-                        <p>Completed the Cabinet & Furniture Making program at the North Bennet Street School in Boston's North End.</p>
-                        <p><a href="/furniture.html" id="btn-furniture" class="btn btn-readmore btn-info" data-toggle="tooltip" title="view information and images about furniture" data-placement="bottom"> More  <span class="glyphicon glyphicon-tree-deciduous"></span></a></p>
-                    </div>
+            <div class="col-sm-6 col-md-8">
+           
+
+ 
+  <div class="bs-example">
+            <div class="media media-padding">
+          <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="0">
+            <img id="table-img" class="media-object img-rounded img-responsive" src="images/demilune_table_150w.png" alt="Generic placeholder image">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Demi-lune Table</h4>
+             The table legs are turned and carved mahogany. The table top and sides are beautiful crotch mahogany veneer with beaded edge.
+          </div>
+        </div>
+    <div class="media media-padding">
+      <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="1"> 
+        <img id="desk-closed-img"  class="media-object img-rounded img-responsive" src="images/desk_closed_150w.png" alt="Generic placeholder image">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Desk on Frame</h4>
+        This is a William and Mary inspired piece constructed in mahagony. The legs were hand carved into double-bines ending in bun feet. The drawer front and slant-top are adorned with cherry and maple cheveron banding. 
+      </div>
+    </div>
+    <div class="media media-padding">
+     <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="2">
+        <img id="armchair-img" class="media-object img-rounded img-responsive" src="images/armchair_150w.png" alt="Generic placeholder image">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Armchair</h4>
+        This George III style mahagony armchair features sweeping curves, carved armrests, cabriole legs with pad feet and leather upholstered frame seat.
+      </div>
+    </div>
+
+    <h6>NOTE: <small>click on images above to view slideshow</small></h6>
+<!-- /.bs-example -->
+
+        </div>
+      </div>
+            
+            <div class="col-sm-3 col-md-3">
+                <aside>
+                  <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Materials</h3>
+                  </div>
+                  <div class="panel-body">
+                    <h4>Wood</h4>
+                    <p>Hardwoods such as mahogany, maple, cherry and walnut are typically used with softwoods such as poplar and soft maple for interior elements such as drawers.</p>
+                    <h4>Finish</h4>
+                  <p>These desk and chest have been coated with tung oil. The finish is gradually padded on until a lush and luminous surface builds. Oil gives the wood a warm natural appearance but affords little protection from surface abrasion.</p>
+                  <p>The chair has a shellac finish. Shellac flakes, made from a resin secreted by the lac bug, is dissolved in alchol and padded on.</p>
+                  </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img id="thumb-img" class="img-responsive"  src="images/painting_mosaic5_300x300.png" alt="">
-                    <div class="caption">
-                        <h3>Painting</h3> 
-                        <p>Created small paintings on panel using drying layers of paint and chopping them using furniture making tools.</p>
-						<p><a href="/painting.html" id="btn-painting" class="btn btn-readmore btn-info" data-toggle="tooltip" title="view information and images about painting" data-placement="bottom">More   <span class="glyphicon glyphicon-picture"></span> </a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img  id="thumb-img" class="img-responsive" src="images/kidney_300x300.png" alt="">
-                    <div class="caption">
-                        <h3>Papercraft</h3> 
-                        <p>Using a Silhouette Cameo paper cutter 2D images are cut into pape to explore effects of light and shadow</p>
-                        <p><a href="/papercraft.html" id="btn-papercraft" class="btn btn-readmore btn-info" data-toggle="tooltip" title="view information and images about papercraft" data-placement="bottom">More   <span class="glyphicon glyphicon-send"></span></a></p>
-                    </div>
-                </div>
-            </div>
+                 
+                </aside>
+              </div>
+
+        </div>
+              
+<!-- furniture modal -->
+<div class="modal fade" id="furnitureModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">Close</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+<!-- jquery mobile dialog -->
+<!-- <a href="dialog.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">Open dialog</a> -->
+<!-- popup image (equivalent to modal slideshow)
+
+<a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Photo landscape</a>
+<a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="fade">Photo portrait</a>
+<div data-role="popup" id="popupPhotoLandscape" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="../_assets/img/photo-landscape.jpg" alt="Photo landscape">
+</div>
+<div data-role="popup" id="popupPhotoPortrait" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="../_assets/img/photo-portrait.jpg" alt="Photo portrait">
+</div>
+
+  -->    
+      <!-- furniture carousel start -->   
+<div id="carousel-furniture" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-furniture" data-slide-to="0" ></li>
+    <li data-target="#carousel-furniture" data-slide-to="1" ></li>
+    <li data-target="#carousel-furniture" data-slide-to="2" ></li>
+  </ol>
+
+  <div class="carousel-inner hisrc">
+    <div class="item active">
+      <img src="images/demilune_table_lg.png" data-1x="images/demilune_table_lg.png" data-2x="images/demilune_table_lg.png" alt="..." >
+      <div class="carousel-caption">
+        <h2>furniture</h2>
+        <p>draw, measure twice & cut once</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/desk_closed_lg.png" data-1x="images/desk_closed_lg.png" data-2x="images/desk_closed_lg.png" alt="..." >
+      <div class="carousel-caption">
+        <h2>painting</h2>
+        <p>dry, layer, chop & adhere</p>
+      </div>
+    </div>
+  <div class="item">
+           <img src="images/armchair_lg.png" data-1x="images/armchair_lg.png" data-2x="images/armchair_lg.png" alt="..." >
+      <div class="carousel-caption">
+         <h2>papercraft</h2>
+        <p>draw, cut & lift</p>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- carousel arrows -->
+  <a class="left carousel-control" href="#carousel-furniture" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-furniture" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<!-- furniture carousel end -->
+
+
+      </div>
+   
+    </div>
+  </div>
+</div>
+    	</main>
+        <footer data-role="footer">
+            <p>&copy; 2014 Stefanie St. Germain</p>
+        </footer>
+    </section>
+<!-- furniture page end-->	
+<!-- contact page start -->
+ <section data-role="page" id="contact" data-theme="c">
+    <header data-role="header" data-position="fixed">
+      <div data-role="tabs" id="tabs">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-ajax="false">home</a></li>
+            <li><a href="#projects" data-ajax="false">projects</a></li>
+            <li><a href="#about"  data-ajax="false">about</a></li>
+            <li><a href="#contact" data-ajax="false">contact</a></li>
+          </ul>
+        </div>
+        <div id="home" class="ui-body-d ui-content">
+          <h1>First tab contents</h1>
+        </div>
+        <div id="projects">
+          <ul data-role="listview" data-inset="true">
+              <li><a href="#furniture">furniture</a></li>
+              <li><a href="#">papercraft</a></li>
+              <li><a href="#">painting</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+        <main data-role="main" class="ui-content ui-grid-a">
+<div class="row" >
+
+     <div class="col-xs-12 col-md-6">  
+      <h3>Contact Stefanie</h3>
+      <h4 class="justified" id="contact-msg">Please feel free to contact me with any questions or comments. </h4>
+      <form ACTION="/cgi-sys/formmail.cgi" METHOD="POST" role="form">
+      <input type=hidden name="recipient" value="contact@stefaniestgermain.org"> 
+      <input type=hidden name="subject" value="stefaniestgermain.org mail"> 
+            
+        <div class="row">
+          <div class="col-xs-12 col-md-6 form-group name-group">
+           <div class="form-group">    
+          <label for="name">Name  </label><span class="glyphicon glyphicon-ok"></span> 
+          <input id="name" type="name" class="form-control" id="name" placeholder="name">
+          <span class="help-block"></span>
+        </div>
+        </div>
+        </div>
+                <div class="row">
+          <div class="col-xs-12 col-md-6 form-group email-group">
+        <div class="form-group">
+          <label for="email1">Email  </label><span class="glyphicon glyphicon-ok"></span> 
+          <input id="email" type="email" class="form-control" id="email1" placeholder="email">
+          <span class="help-block"></span>
+        </div>
+        </div>
+        </div>
+        <div class="form-group">
+                <div class="row">
+          <div class="col-xs-12 col-md-6 form-group message-group">
+          <label for="message">Message  </label><span class="glyphicon glyphicon-ok"></span> 
+          <textarea id="message" class="form-control" id="message" rows="2" placeholder="message"></textarea>
+          <span class="help-block"></span>
+        </div>
+        </div>
         </div>
 
-
+         <div class="row">
+            <div class="col-xs-12 col-md-6 form-group project-group">
+                <label for="project" class="control-label">I am interested the following series:</label>
+                <select id="project" class="form-control">
+                        <option checked>Please select one:</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="painting">Painting</option>
+                        <option value="papercraft">Papercraft</option>                               
+                </select>
+                <span class="help-block"></span>
+            </div>
+         </div>
+  <div class="row">
+<<<<<<< HEAD
+      <div class=" col-xs-12 col-md-6 form-group list-group ">
+      <fieldset>
+       <label for="subscribe" class="control-label">Mailing List Option: </label>
+       <div class="radio">
+          <label for="optionsRadios1">
+          <input id="subscribe" type="radio" name="optionsRadios" id="optionsRadios1" value="yes" checked> Yes, subscribe me
+       </label>
+      </div>
+       <div class="radio">
+          <label for="optionsRadios2">
+          <input id="no-subscribe" type="radio" name="optionsRadios" id="optionsRadios2" checked value="no">
+          No, not at this time
+          No, not at this time
+        </label>
+        <label id="subscribe-label"> </label>
+        </div>
+        </fieldset>
+        <span class="help-block"></span>
+=======
+   
+        <div class=" col-xs-12 col-md-6 form-group subscribe-group "> 
+         <label for="subscribe" class="control-label">Mailing List Option: </label>
        
-        <!-- FOOTER -->
-        <footer>
-          <div class="row">
-            <div class="col-sm-6 col-md-3">  
-              <p>© 2014 Stefanie St. Germain</p>
-              <button type="button" class="btn btn-xs"><a id="showhidepagesetup" href="#">customize page</a></button>
-            </div>
-            <div  class="col-sm-6 col-md-9" id="page-setup">
-
-              <div class="panel panel-default">
-                <div  class="panel-body">
-                  <div class="row">     
-             
-              <div class="col-sm-4 col-md-3">
-                <h3 style="font-family: Verdana; font-size: 18px;" class="change-font">Select page color</h3>
-                <div class="color-choice" id="blue"></div>
-                <div class="color-choice" id="gray"></div>
-                <div class="color-choice" id="tan"></div>
-                <div class="color-choice" id="green"></div>
-                <div class="color-choice" id="white"></div>
-                <br>
-             </div>
-         
-<div class="col-sm-4 col-md-3">
-                <h3 style="font-family: Verdana; font-size: 18px;" class="change-font">Font choice</h3>
-            <select id="fc">
-                  <option value="Arial">Arial</option>
-                  <option selected="selected" value="Verdana ">Verdana </option>
-                  <option value="Georgia">Georgia </option>
-                  <option value="Helvetica">Helvetica</option>
-              </select>
-</div>
-<div class="col-sm-4 col-md-3">
-              <h3 style="font-family: Verdana; font-size: 18px;" class="change-font">Font size</h3>
-            <select id="fs">
-                  <option value="14">14</option>
-                  <option value="16">16</option>
-                  <option selected="selected" value="18">18</option>
-                 <option value="18">20</option>
-                 <option value="18">22</option>
-              </select>
- </div>               
-           
-                </div>
-              </div> 
-                </div>
-              </div>
-            </div>
-
+  <div class="row">
+      
+           <div class="radio ">
+              <label for="optionsRadios1">
+              <input id="subscribe" type="radio" name="optionsRadios" id="optionsRadios1" value="yes" checked> Yes, subscribe me
+              </label>
+          
+      
+     
+         <div class="radio  ">
+            <label for="optionsRadios2">
+            <input id="no-subscribe" type="radio" name="optionsRadios" id="optionsRadios2" checked value="no">
+            No, not at this time
+          </label>
+          <label id="subscribe-label"> </label>
+          </div>
         
+          <span class="help-block"></span>
+>>>>>>> 822cd87e1b7a67d1e864e091fa8c17f7b90e874b
+      </div>
+     </div>
+  </div>
+</div>
+
+
+  <button type="submit" class="btn btn-default">Submit </button>
+       
+      </form>
+       </div>
+     <div class="col-xs-1 col-md-2"></div>  
+    <div class="col-xs-11 col-md-4">
+      <aside >
+        <span id="envelope" class="glyphicon glyphicon-envelope glyphicon-contact hidden-xs hidden-sm "></span>
+        
+      </aside>
+     </div>
+        </div>
+        </main>
+        <footer data-role="footer">
+            <p>&copy; 2014 Stefanie St. Germain</p>
         </footer>
+</section>
+<!-- oranges page end -->
+
 
 
 
@@ -212,6 +454,8 @@
       wrap: true //false to stop on last img
     });
   </script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
   <script src="js/application.js"></script>
 </body>
 </html>

@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>St Germain E-20</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<link rel="stylesheet" href="themes/ss_them.min.css" />
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+<!--	<link rel="stylesheet" href="themes/ss_them.min.css" />
+     <link rel="stylesheet" href="themes/jquery.mobile.1.4.5.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" /> 
     <link href="css/custom.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> 
@@ -15,6 +18,9 @@
    <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel="prefetch" href="images/furniture_carousel_sm.png">
+    <link rel="prefetch" href="images/painting_carousel_sm.png">
+    <link rel="prefetch" href="images/papercraft_carousel_sm.png">
   
    
     <style>
@@ -27,8 +33,9 @@
 
 <body>
 <!-- Home Page-->
-   <section data-role="page" id="home" data-theme="c">
+   <section data-role="page" id="home" data-theme="a">
   	<header data-role="header" data-position="fixed">
+    <h1>Stefanie St. Germain</h1>
       <div data-role="tabs" id="tabs">
         <div data-role="navbar">
           <ul>
@@ -38,9 +45,7 @@
             <li><a href="#contact" data-ajax="false">contact</a></li>
           </ul>
         </div>
-        <div id="home" class="ui-body-d ui-content">
-          <h1>First tab contents</h1>
-        </div>
+  
         <div id="projects">
           <ul data-role="listview" data-inset="true">
               <li><a href="#furniture">furniture</a></li>
@@ -51,23 +56,10 @@
       </div>
     </header>
 
+    <!-- -->
+<!-- home page carousel start -->   
 
-    	<main data-role="main" class="ui-content">
-            <div class="ui-corner-all custom-corners" data-theme="c">
-			                <div class="ui-bar ui-bar-a">
-							                <div class="ui-bar ui-bar-a">
-                    <h3>Fruit is delicious</h3>
-                </div>
-                <div class="ui-grid-a ui-body ui-body-a">
-                    <div class="ui-block-a">
-                		<p>Fruit makes a great snack, or slice it up and eat it with a meal. Portable, sweet, and filling, you can take fruit anywhere, even to a Bootstrap workshop!</p>
-                    </div>
-                    <div class="ui-block-b">
-            		  <img src="img/fruit-500.jpg" alt="yummy fruit!">
-                    </div>
-                </div>
-            </div>
-<!-- home page carousel start -->		
+<!--
 <div id="carousel-home " class="carousel slide" data-ride="carousel">
 
   <ol class="carousel-indicators  hidden-sm">
@@ -91,7 +83,7 @@
         <p class="hidden-xs hidden-sm">dry, layer, chop & adhere</p>
       </div>
     </div>
-	<div class="item">
+  <div class="item">
            <a href="/papercraft.html"><img class="img-responsive"src="images/papercraft_carousel_sm.png" data-1x="images/papercraft_carousel_lg.png" data-2x="images/papercraft_carousel_lg.png" alt="paper cutout" ></a>
       <div class="carousel-caption ">
          <h2>papercraft</h2>
@@ -100,22 +92,81 @@
     </div>
    
   </div>
-
-  <!-- carousel arrows -->
-  <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+<carousel arrows -->
+ <!-- <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
   <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-</div>
+</div> -->
+    <!-- -->
+
+
+    	<main id="homeslider" data-role="main content" class="ui-content" >
+            <div  >
+            <div id="slider" class="start"></div>
+            </div>
+
+
+
+
+ 
+ 
+
+<!-- 3 grid --> 
+
+
+        <div class="ui-grid-b">
+           <div class="ui-block-a">
+              <div class="ui-bar ui-bar-c">
+                    <img  src="images/demilune_table_300x300.png" alt="">
+                    <div>
+                        <h3>Furniture</h3> 
+                        <p>Completed the Cabinet & Furniture Making program at the North Bennet Street School in Boston's North End.</p>
+                        <p><a href="#furniture" id="btn-furniture" class="ui-btn ui-icon-home ui-btn-icon-left" data-toggle="tooltip" title="view information and images about furniture" data-placement="bottom"> More  <span class="glyphicon glyphicon-tree-deciduous"></span></a></p>
+                    </div>
+              </div>
+            </div>
+       
+
+            
+              <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                 
+                    <img  src="images/painting_mosaic5_300x300.png" alt="">
+                    <div >
+                        <h3>Painting</h3> 
+                        <p>Created small paintings on panel using drying layers of paint and chopping them using furniture making tools.</p>
+            <p><a href="/painting.html" id="btn-painting" class="ui-btn ui-icon-edit ui-btn-icon-left"data-toggle="tooltip" title="view information and images about painting" data-placement="bottom">More    </a></p>
+                    </div>
+                </div>
+            
+          </div>
+        
+          
+                <div class="ui-block-c">
+                   <div class="ui-bar ui-bar-c">
+                    <img   src="images/kidney_300x300.png" alt="">
+                    <div >
+                        <h3>Papercraft</h3> 
+                        <p>Using a Silhouette Cameo paper cutter 2D images are cut into pape to explore effects of light and shadow</p>
+                        <p><a href="/papercraft.html" id="btn-papercraft" class="ui-btn ui-icon-navigation ui-btn-icon-left" data-toggle="tooltip" title="view information and images about papercraft" data-placement="bottom">More   </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+<!-- 3 grid end -->         
+
       </main>
         <footer data-role="footer">
             <p>&copy; 2014 Stefanie St. Germain</p>
         </footer>
     </section>
 <!-- furniture page-->
- <section data-role="page" id="furniture" data-theme="c">
+ <section data-role="page" id="furniture" data-theme="a">
     <header data-role="header" data-position="fixed">
       <div data-role="tabs" id="tabs">
         <div data-role="navbar">
@@ -127,7 +178,7 @@
           </ul>
         </div>
         <div id="home" class="ui-body-d ui-content">
-          <h1>First tab contents</h1>
+         
         </div>
         <div id="projects">
           <ul data-role="listview" data-inset="true">
@@ -139,58 +190,69 @@
       </div>
     </header>
       <main data-role="main" class="ui-content">
-  <div class="jumbotron jumbotron-project" >
-          <div class="container">  
-            <div class="col-md-12">
-                <h2 class="featurette-heading"><span class="text-muted">furniture</span></h2>
-                <p class="lead ">The table, chair and desk below were completed while a student in the two year Cabinet and Furniture Making program at the North Bennet Street School in Boston's North End.</p>
+      
+         <div   class="ui-corner-all custom-corners" data-theme="b">
+             <div class="ui-bar ui-bar-a">
+                 <div class="ui-bar ui-bar-a">
+                    <h3>furniture</h3>
+                 </div>
+                <div class="ui-grid-a ui-body ui-body-a">
+                    <div class="ui-block-a">
+                    <p>The table, chair and desk below were completed while a student in the two year Cabinet and Furniture Making program at the North Bennet Street School in Boston's North End.</p>
+                     
+                   </div>
+                    <div class="ui-block-b">
+                      <img src="img/fruit-500.jpg" alt="yummy fruit!">
+                    </div>
+                </div>
             </div>
-      </div>
-        </div>
+          </div>
+
         <hr>
         <div >
-            <div class="col-sm-6 col-md-8">
-           
-
+            
+     
+ <article class="ui-block-a">
  
-  <div class="bs-example">
-            <div class="media media-padding">
-          <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="0">
+ 
+            <div >
+          <a >
             <img id="table-img" class="media-object img-rounded img-responsive" src="images/demilune_table_150w.png" alt="Generic placeholder image">
           </a>
-          <div class="media-body">
-            <h4 class="media-heading">Demi-lune Table</h4>
+          <div>
+            <h4 >Demi-lune Table</h4>
              The table legs are turned and carved mahogany. The table top and sides are beautiful crotch mahogany veneer with beaded edge.
           </div>
         </div>
-    <div class="media media-padding">
-      <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="1"> 
-        <img id="desk-closed-img"  class="media-object img-rounded img-responsive" src="images/desk_closed_150w.png" alt="Generic placeholder image">
+    <div >
+      <a > 
+        <img id="desk-closed-img"  class="" src="images/desk_closed_150w.png" alt="Generic placeholder image">
       </a>
-      <div class="media-body">
-        <h4 class="media-heading">Desk on Frame</h4>
+      <div>
+        <h4 >Desk on Frame</h4>
         This is a William and Mary inspired piece constructed in mahagony. The legs were hand carved into double-bines ending in bun feet. The drawer front and slant-top are adorned with cherry and maple cheveron banding. 
       </div>
     </div>
-    <div class="media media-padding">
-     <a class="pull-left" data-toggle="modal" data-target="#furnitureModal" data-slide-to="2">
-        <img id="armchair-img" class="media-object img-rounded img-responsive" src="images/armchair_150w.png" alt="Generic placeholder image">
+    <div >
+     <a >
+        <img id="armchair-img" class="" src="images/armchair_150w.png" alt="Generic placeholder image">
       </a>
-      <div class="media-body">
-        <h4 class="media-heading">Armchair</h4>
+      <div>
+        <h4 >Armchair</h4>
         This George III style mahagony armchair features sweeping curves, carved armrests, cabriole legs with pad feet and leather upholstered frame seat.
       </div>
-    </div>
+   
 
     <h6>NOTE: <small>click on images above to view slideshow</small></h6>
 <!-- /.bs-example -->
 
         </div>
-      </div>
-            
-            <div class="col-sm-3 col-md-3">
-                <aside>
-                  <div class="panel panel-default">
+     
+      </article>
+      <!-- aside -->
+       <aside class="ui-block-b">
+      <img src="img/orange-300.jpg" alt="Oranges! ">
+                <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">Materials</h3>
                   </div>
@@ -202,9 +264,10 @@
                   <p>The chair has a shellac finish. Shellac flakes, made from a resin secreted by the lac bug, is dissolved in alchol and padded on.</p>
                   </div>
                 </div>
-                 
-                </aside>
-              </div>
+            </aside> 
+
+      <!-- aside end -->      
+
 
         </div>
               
@@ -288,7 +351,7 @@
     </section>
 <!-- furniture page end-->	
 <!-- contact page start -->
- <section data-role="page" id="contact" data-theme="c">
+ <section data-role="page" id="contact" data-theme="a">
     <header data-role="header" data-position="fixed">
       <div data-role="tabs" id="tabs">
         <div data-role="navbar">
@@ -300,7 +363,7 @@
           </ul>
         </div>
         <div id="home" class="ui-body-d ui-content">
-          <h1>First tab contents</h1>
+         
         </div>
         <div id="projects">
           <ul data-role="listview" data-inset="true">
@@ -322,29 +385,23 @@
       <input type=hidden name="subject" value="stefaniestgermain.org mail"> 
             
         <div >
-          <div >
-           <div >    
+        
           <label for="name">Name  </label>
           <input id="name" type="name" id="name" placeholder="name">
         </div>
-        </div>
-        </div>
+       
         <div >
-          <div >
-        <div>
+    
           <label for="email1">Email  </label>
           <input id="email" type="email"  id="email1" placeholder="email">
-        </div>
-        </div>
+       
         </div>
         <div >
-                <div >
-          <div >
+           
           <label for="message">Message  </label>
           <textarea id="message"  id="message" rows="2" placeholder="message"></textarea>
          
-        </div>
-        </div>
+       
         </div>
 
         
@@ -361,54 +418,101 @@
          </div>
   <div >
 
-      <div >
+     
       <fieldset data-role="controlgroup">
        <legend>Mailing List Option: </legend>
       
          
-          <input id="subscribe" type="radio" name="radio-choice-v-2" id="radio-choice-v-2" value="yes" checked>
-        <label for="optionsRadios1"> Yes, subscribe me</label>
+          <input id="radio-choice-v-2a" type="radio" name="radio-choice-v-2"  value="on" checked="checked">
+        <label for="radio-choice-v-2a">Yes, subscribe me</label>
       
        
           
-          <input id="no-subscribe" type="radio" name="radio-choice-v-2" id="radio-choice-v-2" checked value="no">
-          
-        
-        <label for="optionsRadios2">No, not at this time</label>
+          <input id="radio-choice-v-2b" type="radio" name="radio-choice-v-2"  value="off">
+        <label for="radio-choice-v-2b">No, not at this time</label>
        
       
       </fieldset>
         
-        </div > 
+   </div > 
        
        
  
 
       </div>
-     </div>
-  </div>
-</div>
+
 
 
   <button type="submit" class="btn btn-default">Submit </button>
        
       </form>
-       </div>
-     <div ></div>  
-    <div >
-      <aside >
-        <span id="envelope" class=""></span>
-        
-      </aside>
-     </div>
-        </div>
-        </main>
+      
+  </main>
         <footer data-role="footer">
             <p>&copy; 2014 Stefanie St. Germain</p>
         </footer>
 </section>
-<!-- oranges page end -->
+<!-- about page end -->
+    
 
+    <section data-role="page" id="about" data-theme="b">
+    <header data-role="header" data-position="fixed">
+      <div data-role="tabs" id="tabs">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" data-ajax="false">home</a></li>
+            <li><a href="#projects" data-ajax="false">projects</a></li>
+            <li><a href="#about"  data-ajax="false">about</a></li>
+            <li><a href="#contact" data-ajax="false">contact</a></li>
+          </ul>
+        </div>
+        <div id="home" class="ui-body-d ui-content">
+         
+        </div>
+        <div id="projects">
+          <ul data-role="listview" data-inset="true">
+              <li><a href="#furniture">furniture</a></li>
+              <li><a href="#">papercraft</a></li>
+              <li><a href="#">painting</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+        <main data-role="main" class="ui-content ui-grid-a">
+            <article class="ui-block-a">
+                  <div data-role="collapsible" >
+                  <h3>About</h3>
+                  <img class="" src="images/stefanie_med.png" data-1x="images/stefanie_med.png" data-2x="images/stefanie_med.png" alt="stefanie" >
+                  <p>Trained at the North Bennet Street School in historic cabinet and furniture making and having dabbled in painting and papercraft, Stefanie is an IT professional and graduate student with a creative side. She is hoping in the future to find ways to have these two worlds intersect.</p>
+                  </div>
+                  <div  id="interests" data-role="collapsible" >
+                  <h3>Education</h3>
+                  <p>
+                     <ul  class="">
+                      <li>Boston College, B.A in Art History, summa cum laude</li>
+                      <li>North Bennet Street School, Cabinet & Furniture Making</li>
+                      <li>Harvard Extension School, applicant to the degree of Master of Liberal Arts (ALM)
+                    </ul>
+                  </p>
+                  </div>
+                  <div  id="interests" data-role="collapsible" >
+                  <h3>Interests</h3><p>
+                      <ul>
+                      <li>Northern Renaissance Art <a href="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:200px;"><p>Northern Renaissance painting</p></div>
+                      <li>D3.js</li>
+                      <li >Processing/Arduino</li>
+                      <li >Origami</li>
+                      <li >Rhino 3d & Grasshopper</li>
+                      </ul></p>
+                  </div>
+            </article>
+           
+        </main>
+        <footer data-role="footer">
+            <p>&copy; 2014 Stefanie St. Germain</p>
+        </footer>
+    </section>
+<!-- about page end -->
 
 
 

@@ -1,5 +1,25 @@
 
    $(document).ready(function(){
+
+//assignment 3 start
+ $('#homeslider').bind('swipeleft', function(event) {
+    $('#slider').removeClass().addClass('painting');           
+ });
+ $('#homeslider').bind('swiperight', function(event) {
+      $('#slider').removeClass().addClass('papercraft');         
+ });
+ $('#homeslider').bind('taphold', function(event) {
+     $('#slider').removeClass().addClass('furniture');
+ });
+ $( window ).on( 'orientationchange', function() {
+  if(window.orientation == 0) {
+       $('#slider').removeClass().addClass('puppy');
+  } else {
+        $('#slider').removeClass().addClass('three');
+  }
+  });
+//assignment 3 end
+
       console.log("Document loaded!"); //for debugging
       $('#page-setup').hide(); //start out hidden
       $('nav').fadeOut(1000).fadeIn(500); //chained functions

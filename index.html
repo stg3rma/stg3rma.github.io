@@ -111,7 +111,7 @@
 </div>
       </main>
         <footer data-role="footer">
-            <p>Up & Running with Bootstrap Workshop. &copy; 2014 Jen Kramer. All rights reserved.</p>
+            <p>&copy; 2014 Stefanie St. Germain</p>
         </footer>
     </section>
 <!-- furniture page-->
@@ -148,7 +148,7 @@
       </div>
         </div>
         <hr>
-        <div class="row">
+        <div >
             <div class="col-sm-6 col-md-8">
            
 
@@ -312,99 +312,78 @@
       </div>
     </header>
         <main data-role="main" class="ui-content ui-grid-a">
-<div class="row" >
+<div  >
 
-     <div class="col-xs-12 col-md-6">  
+     <div >  
       <h3>Contact Stefanie</h3>
       <h4 class="justified" id="contact-msg">Please feel free to contact me with any questions or comments. </h4>
       <form ACTION="/cgi-sys/formmail.cgi" METHOD="POST" role="form">
       <input type=hidden name="recipient" value="contact@stefaniestgermain.org"> 
       <input type=hidden name="subject" value="stefaniestgermain.org mail"> 
             
-        <div class="row">
-          <div class="col-xs-12 col-md-6 form-group name-group">
-           <div class="form-group">    
-          <label for="name">Name  </label><span class="glyphicon glyphicon-ok"></span> 
-          <input id="name" type="name" class="form-control" id="name" placeholder="name">
-          <span class="help-block"></span>
+        <div >
+          <div >
+           <div >    
+          <label for="name">Name  </label>
+          <input id="name" type="name" id="name" placeholder="name">
         </div>
         </div>
         </div>
-                <div class="row">
-          <div class="col-xs-12 col-md-6 form-group email-group">
-        <div class="form-group">
-          <label for="email1">Email  </label><span class="glyphicon glyphicon-ok"></span> 
-          <input id="email" type="email" class="form-control" id="email1" placeholder="email">
-          <span class="help-block"></span>
+        <div >
+          <div >
+        <div>
+          <label for="email1">Email  </label>
+          <input id="email" type="email"  id="email1" placeholder="email">
         </div>
         </div>
         </div>
-        <div class="form-group">
-                <div class="row">
-          <div class="col-xs-12 col-md-6 form-group message-group">
-          <label for="message">Message  </label><span class="glyphicon glyphicon-ok"></span> 
-          <textarea id="message" class="form-control" id="message" rows="2" placeholder="message"></textarea>
-          <span class="help-block"></span>
+        <div >
+                <div >
+          <div >
+          <label for="message">Message  </label>
+          <textarea id="message"  id="message" rows="2" placeholder="message"></textarea>
+         
         </div>
         </div>
         </div>
 
-         <div class="row">
-            <div class="col-xs-12 col-md-6 form-group project-group">
-                <label for="project" class="control-label">I am interested the following series:</label>
-                <select id="project" class="form-control">
-                        <option checked>Please select one:</option>
-                        <option value="furniture">Furniture</option>
-                        <option value="painting">Painting</option>
-                        <option value="papercraft">Papercraft</option>                               
-                </select>
-                <span class="help-block"></span>
-            </div>
-         </div>
-  <div class="row">
-<<<<<<< HEAD
-      <div class=" col-xs-12 col-md-6 form-group list-group ">
-      <fieldset>
-       <label for="subscribe" class="control-label">Mailing List Option: </label>
-       <div class="radio">
-          <label for="optionsRadios1">
-          <input id="subscribe" type="radio" name="optionsRadios" id="optionsRadios1" value="yes" checked> Yes, subscribe me
-       </label>
-      </div>
-       <div class="radio">
-          <label for="optionsRadios2">
-          <input id="no-subscribe" type="radio" name="optionsRadios" id="optionsRadios2" checked value="no">
-          No, not at this time
-          No, not at this time
-        </label>
-        <label id="subscribe-label"> </label>
-        </div>
-        </fieldset>
-        <span class="help-block"></span>
-=======
-   
-        <div class=" col-xs-12 col-md-6 form-group subscribe-group "> 
-         <label for="subscribe" class="control-label">Mailing List Option: </label>
-       
-  <div class="row">
-      
-           <div class="radio ">
-              <label for="optionsRadios1">
-              <input id="subscribe" type="radio" name="optionsRadios" id="optionsRadios1" value="yes" checked> Yes, subscribe me
-              </label>
-          
-      
-     
-         <div class="radio  ">
-            <label for="optionsRadios2">
-            <input id="no-subscribe" type="radio" name="optionsRadios" id="optionsRadios2" checked value="no">
-            No, not at this time
-          </label>
-          <label id="subscribe-label"> </label>
-          </div>
         
-          <span class="help-block"></span>
->>>>>>> 822cd87e1b7a67d1e864e091fa8c17f7b90e874b
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>I am interested the following series:</legend>
+                <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
+                <label for="checkbox-h-2a">Furniture</label>
+                 <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
+                <label for="checkbox-h-2b">Painting</label>
+                <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
+                <label for="checkbox-h-2c">Papercraft</label>
+                </fieldset>
+        
+         </div>
+  <div >
+
+      <div >
+      <fieldset data-role="controlgroup">
+       <legend>Mailing List Option: </legend>
+      
+         
+          <input id="subscribe" type="radio" name="radio-choice-v-2" id="radio-choice-v-2" value="yes" checked>
+        <label for="optionsRadios1"> Yes, subscribe me</label>
+      
+       
+          
+          <input id="no-subscribe" type="radio" name="radio-choice-v-2" id="radio-choice-v-2" checked value="no">
+          
+        
+        <label for="optionsRadios2">No, not at this time</label>
+       
+      
+      </fieldset>
+        
+        </div > 
+       
+       
+ 
+
       </div>
      </div>
   </div>
@@ -415,10 +394,10 @@
        
       </form>
        </div>
-     <div class="col-xs-1 col-md-2"></div>  
-    <div class="col-xs-11 col-md-4">
+     <div ></div>  
+    <div >
       <aside >
-        <span id="envelope" class="glyphicon glyphicon-envelope glyphicon-contact hidden-xs hidden-sm "></span>
+        <span id="envelope" class=""></span>
         
       </aside>
      </div>
@@ -445,15 +424,7 @@
       $(".hisrc img").hisrc();
     });
   </script>
-  <script>
-    $('a.btn-info').tooltip()
-  </script>
-  <script>
-    $('.carousel-home').carousel({
-      interval: 3000,
-      wrap: true //false to stop on last img
-    });
-  </script>
+ 
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
 
   <script src="js/application.js"></script>

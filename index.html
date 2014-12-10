@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>St Germain E-20</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-<!--	<link rel="stylesheet" href="themes/ss_them.min.css" />
-     <link rel="stylesheet" href="themes/jquery.mobile.1.4.5.min.css" />
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> -->
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
-  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" /> 
+	  <link rel="stylesheet" href="themes/sstheme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.1.4.5.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
+	  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" /> 
+
+
     <link href="css/custom.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> 
-   <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link rel="prefetch" href="images/furniture_carousel_sm.png">
     <link rel="prefetch" href="images/painting_carousel_sm.png">
     <link rel="prefetch" href="images/papercraft_carousel_sm.png">
   
-   
+
+
     <style>
     .hisrc img {
       width: auto;
@@ -33,7 +36,7 @@
 
 <body>
 <!-- Home Page-->
-   <section data-role="page" id="home" data-theme="a">
+   <section data-role="page" id="home" data-theme="c">
   	<header data-role="header" data-position="fixed">
     <h1>Stefanie St. Germain</h1>
       <div data-role="tabs" id="tabs">
@@ -101,14 +104,39 @@
   </a>
 </div> -->
     <!-- -->
+<main id="homeslider" data-role="main content" class="ui-content" >
+ <div class="ui-grid-solo">
+ <div class="ui-block-a">
+    	 <div id="slider" class="start"></div>
+ <!--       <div class="hisrc">
+    <div class="">
+      <a href="#furniture"><img id="furniture_home" src="images/furniture_carousel_sm.png" data-1x="images/furniture_carousel_lg.png" data-2x="images/furniture_carousel_lg.png" alt="drawer front detail" ></a>
+      <div class="">
+        <h2>furniture</h2>
+        <p class="">draw, measure twice & cut once</p>
+      </div>
+    </div>
+    </div>
+    </div>
+  <div class="item">
+      <a href="#painting"><img  src="images/painting_carousel_sm.png" data-1x="images/painting_carousel_lg.png" data-2x="images/painting_carousel_lg.png" alt="chopped paint image" ></a>
+      <div class="">
+        <h2>painting</h2>
+        <p class=">dry, layer, chop & adhere</p>
+      </div>
+    </div>
+  <div class="item">
+           <a href="papercraft.html"><img src="images/papercraft_carousel_sm.png" data-1x="images/papercraft_carousel_lg.png" data-2x="images/papercraft_carousel_lg.png" alt="paper cutout" ></a>
+      <div class="">
+         <h2>papercraft</h2>
+        <p class="">draw, cut & lift</p>
+      </div>-->
+    </div> 
+   
+  </div>
+            
 
-
-    	<main id="homeslider" data-role="main content" class="ui-content" >
-            <div  >
-            <div id="slider" class="start"></div>
-            </div>
-
-
+</div>
 
 
  
@@ -120,7 +148,7 @@
         <div class="ui-grid-b">
            <div class="ui-block-a">
               <div class="ui-bar ui-bar-c">
-                    <img  src="images/demilune_table_300x300.png" alt="">
+                    <a href="#popupFurniture" data-rel="popup" data-position-to="window" data-transition="fade"><img  src="images/demilune_table_300x300.png" alt="" ></a>
                     <div>
                         <h3>Furniture</h3> 
                         <p>Completed the Cabinet & Furniture Making program at the North Bennet Street School in Boston's North End.</p>
@@ -134,10 +162,10 @@
               <div class="ui-block-b">
                  <div class="ui-bar ui-bar-c">
                  
-                    <img  src="images/painting_mosaic5_300x300.png" alt="">
+                    <a href="#popupPainting" data-rel="popup" data-position-to="window" data-transition="fade"><img  src="images/painting_mosaic5_300x300.png" alt=""></a>
                     <div >
                         <h3>Painting</h3> 
-                        <p>Created small paintings on panel using drying layers of paint and chopping them using furniture making tools.</p>
+                        <p>Created small paintings on panel by drying layers of acrylic paint and chopping using furniture making tools.</p>
             <p><a href="/painting.html" id="btn-painting" class="ui-btn ui-icon-edit ui-btn-icon-left"data-toggle="tooltip" title="view information and images about painting" data-placement="bottom">More    </a></p>
                     </div>
                 </div>
@@ -147,7 +175,7 @@
           
                 <div class="ui-block-c">
                    <div class="ui-bar ui-bar-c">
-                    <img   src="images/kidney_300x300.png" alt="">
+                    <a href="#popupPapercraft" data-rel="popup" data-position-to="window" data-transition="fade"><img   src="images/kidney_300x300.png" alt=""></a>
                     <div >
                         <h3>Papercraft</h3> 
                         <p>Using a Silhouette Cameo paper cutter 2D images are cut into pape to explore effects of light and shadow</p>
@@ -158,6 +186,20 @@
         </div>
      
 
+
+
+<div data-role="popup" id="popupFurniture" data-overlay-theme="b" data-theme="c" data-corners="false">
+   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <img class="popphoto" src="images/demilune_table_lg.fw.png" data-1x="images/demilune_table_lg.fw.png" data-2x="images/demilune_table_lg.fw.png" alt="drawer front detail"  style="max-height:512px" alt="furniture">
+</div>
+<div data-role="popup" id="popupPainting" data-overlay-theme="b" data-theme="c" data-corners="false">
+   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <img class="popphoto" src="images/painting_mosaic5_lg.png" data-1x="images/painting_mosaic5_lg.png" data-2x="images/painting_mosaic5_lg.png" alt="chopped paint image"  style="max-height:512px" alt="furniture">
+</div>
+<div data-role="popup" id="popupPapercraft" data-overlay-theme="b" data-theme="c" data-corners="false">
+   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   <img class="popphoto" src="images/kidney_600x600.png" data-1x="images/kidney_300x300.png" data-2x="images/kidney_600x600.png" alt="paper cutout"  style="max-height:512px" alt="furniture">
+</div>
 <!-- 3 grid end -->         
 
       </main>
@@ -166,7 +208,7 @@
         </footer>
     </section>
 <!-- furniture page-->
- <section data-role="page" id="furniture" data-theme="a">
+ <section data-role="page" id="furniture" data-theme="c">
     <header data-role="header" data-position="fixed">
       <div data-role="tabs" id="tabs">
         <div data-role="navbar">
@@ -286,10 +328,10 @@
 
 <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Photo landscape</a>
 <a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="fade">Photo portrait</a>
-<div data-role="popup" id="popupPhotoLandscape" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+<div data-role="popup" id="popupPhotoLandscape" class="photopopup" data-overlay-theme="c" data-corners="false" data-tolerance="30,15">
     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="../_assets/img/photo-landscape.jpg" alt="Photo landscape">
 </div>
-<div data-role="popup" id="popupPhotoPortrait" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+<div data-role="popup" id="popupPhotoPortrait" class="photopopup" data-overlay-theme="c" data-corners="false" data-tolerance="30,15">
     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="../_assets/img/photo-portrait.jpg" alt="Photo portrait">
 </div>
 
@@ -351,7 +393,7 @@
     </section>
 <!-- furniture page end-->	
 <!-- contact page start -->
- <section data-role="page" id="contact" data-theme="a">
+ <section data-role="page" id="contact" data-theme="c">
     <header data-role="header" data-position="fixed">
       <div data-role="tabs" id="tabs">
         <div data-role="navbar">
@@ -384,22 +426,25 @@
       <input type=hidden name="recipient" value="contact@stefaniestgermain.org"> 
       <input type=hidden name="subject" value="stefaniestgermain.org mail"> 
             
+
         <div >
-        
-          <label for="name">Name  </label>
-          <input id="name" type="name" id="name" placeholder="name">
+
+          <label for="name1">Name  </label>
+          <input id="name1" type="name1"  placeholder="name">
+
         </div>
-       
+
         <div >
-    
+
           <label for="email1">Email  </label>
           <input id="email" type="email"  id="email1" placeholder="email">
-       
+
         </div>
+
         <div >
            
           <label for="message">Message  </label>
-          <textarea id="message"  id="message" rows="2" placeholder="message"></textarea>
+          <textarea id="message"   rows="2" placeholder="message"></textarea>
          
        
         </div>
@@ -455,7 +500,7 @@
 <!-- about page end -->
     
 
-    <section data-role="page" id="about" data-theme="b">
+    <section data-role="page" id="about" data-theme="c">
     <header data-role="header" data-position="fixed">
       <div data-role="tabs" id="tabs">
         <div data-role="navbar">
@@ -498,11 +543,15 @@
                   <div  id="interests" data-role="collapsible" >
                   <h3>Interests</h3><p>
                       <ul>
-                      <li>Northern Renaissance Art <a href="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:200px;"><p>Northern Renaissance painting</p></div>
-                      <li>D3.js</li>
-                      <li >Processing/Arduino</li>
-                      <li >Origami</li>
-                      <li >Rhino 3d & Grasshopper</li>
+                      <li>Northern Renaissance Art <a href="#popupInfo" data-rel="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo" class="ui-content" data-theme="c" style="max-width:200px;"><p>Northern Renaissance painting</p></div>
+
+                      <li>D3.js<a href="#popupInfo2" data-rel="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo2" class="ui-content" data-theme="c" style="max-width:200px;"><p>D3.js</p></div>
+
+                      <li >Processing/Arduino<a href="#popupInfo3" data-rel="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo3" class="ui-content" data-theme="c" style="max-width:200px;"><p>Processing/Arduino</p></div>
+
+                      <li >Origami<a href="#popupInfo4" data-rel="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo4" class="ui-content" data-theme="c" style="max-width:200px;"><p>Origami</p></div>
+
+                      <li >Rhino 3d & Grasshopper<a href="#popupInfo5" data-rel="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo5" class="ui-content" data-theme="c" style="max-width:200px;"><p>Rhino 3d & Grasshopper</p></div>
                       </ul></p>
                   </div>
             </article>
@@ -513,13 +562,50 @@
         </footer>
     </section>
 <!-- about page end -->
+ <section data-role="page" id="kitten">
+            <header data-role="header">
+                  <h1>Moar Kittehz!</h1>
+            </header>
+            <main id="test" data-role="content">
+                  <p>Swipe left/right to increase and decrease the number of kittehz you see.</p>
+                  <p>Tap and hold to change to lots of adorable kittehz.</p>
+                  <p>Try an orientation change to see 3 kittehz and a surprise.</p>
+                  <div id="kitteh" class="start"></div>
+            </main>
+            <footer data-role="footer">
+                  <p>&copy; Moar Kittens!</p>
+            </footer>
+            
+      </section>
 
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script>
+            $(document).ready(function() {
+                  $('#test').bind('swipeleft', function(event) {
+                        $('#kitteh').removeClass().addClass('one');           
+                  });
+                  $('#test').bind('swiperight', function(event) {
+                        $('#kitteh').removeClass().addClass('two');         
+                  });
+                  $('#test').bind('taphold', function(event) {
+                        $('#kitteh').removeClass().addClass('lots');
+                  });
+                  $( window ).on( 'orientationchange', function() {
+                        if(window.orientation == 0) {
+                              $('#kitteh').removeClass().addClass('puppy');
+                        } else {
+                              $('#kitteh').removeClass().addClass('three');
+                        }
+                  });
+            });
+      </script>
 
 
 
 
   <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+ <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/hisrc.js"></script>
   <script src="js/respond.min.js"></script>
   <script>
@@ -536,4 +622,3 @@
 </html>
        
 
-       

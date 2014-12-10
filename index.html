@@ -6,14 +6,18 @@
     <title>St Germain E-20</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	  <link rel="stylesheet" href="themes/sstheme.min.css" />
-    <link rel="stylesheet" href="themes/jquery.mobile.1.4.5.min.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
-	  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
-    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" /> 
+<!--    <link rel="stylesheet" href="themes/jquery.mobile.1.4.5.min.css" />
+   
+	  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />-->
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+ <!--   <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" /> -->
+    <link rel="stylesheet" href="css/custom.css">
 
 
-    <link href="css/custom.css" rel="stylesheet">
+
+
+
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -232,7 +236,8 @@
       </div>
     </header>
       <main data-role="main" class="ui-content">
-      
+        <div class="ui-grid-a">
+        <div class="ui-block-a">
          <div   class="ui-corner-all custom-corners" data-theme="b">
              <div class="ui-bar ui-bar-a">
                  <div class="ui-bar ui-bar-a">
@@ -286,6 +291,9 @@
    
 
     <h6>NOTE: <small>click on images above to view slideshow</small></h6>
+
+    </div>
+
 <!-- /.bs-example -->
 
         </div>
@@ -293,12 +301,12 @@
       </article>
       <!-- aside -->
        <aside class="ui-block-b">
-      <img src="img/orange-300.jpg" alt="Oranges! ">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Materials</h3>
+
+                <div class="ui-corner-all custom-corners">
+                  <div class="ui-bar ui-bar-a">
+                    <h3>Materials</h3>
                   </div>
-                  <div class="panel-body">
+                  <div class="ui-body ui-body-a">
                     <h4>Wood</h4>
                     <p>Hardwoods such as mahogany, maple, cherry and walnut are typically used with softwoods such as poplar and soft maple for interior elements such as drawers.</p>
                     <h4>Finish</h4>
@@ -312,7 +320,7 @@
 
 
         </div>
-              
+     </div>          
 <!-- furniture modal -->
 <div class="modal fade" id="furnitureModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
@@ -427,30 +435,30 @@
       <input type=hidden name="subject" value="stefaniestgermain.org mail"> 
             
 
-        <div >
+        <div class="ui-field-contain" >
 
           <label for="name1">Name  </label>
-          <input id="name1" type="name1"  placeholder="name">
+          <input type="text" name="name1" placeholder="name">
 
         </div>
 
-        <div >
+        <div class="ui-field-contain"  >
 
           <label for="email1">Email  </label>
-          <input id="email" type="email"  id="email1" placeholder="email">
+          <input type="email" name="email1" placeholder="email">
 
         </div>
 
-        <div >
+        <div class="ui-field-contain" >
            
           <label for="message">Message  </label>
-          <textarea id="message"   rows="2" placeholder="message"></textarea>
+          <textarea type="text" id="message" name="message" rows="2" placeholder="message"></textarea>
          
        
-        </div>
+        </div class="ui-field-contain" >
 
         
-            <fieldset data-role="controlgroup" data-type="horizontal">
+            <fieldset class="ui-field-contain" data-role="controlgroup" data-type="horizontal">
                 <legend>I am interested the following series:</legend>
                 <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
                 <label for="checkbox-h-2a">Furniture</label>
@@ -464,7 +472,7 @@
   <div >
 
      
-      <fieldset data-role="controlgroup">
+      <fieldset class="ui-field-contain" data-role="controlgroup">
        <legend>Mailing List Option: </legend>
       
          
@@ -523,7 +531,8 @@
         </div>
       </div>
     </header>
-        <main data-role="main" class="ui-content ui-grid-a">
+        <main data-role="main" class="ui-content">
+          <div class="ui-grid-a">
             <article class="ui-block-a">
                   <div data-role="collapsible" >
                   <h3>About</h3>
@@ -553,6 +562,7 @@
 
                       <li >Rhino 3d & Grasshopper<a href="#popupInfo5" data-rel="popup" data-transition="pop" class="tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Northern Renaissance Art"></a></li><div data-role="popup" id="popupInfo5" class="ui-content" data-theme="c" style="max-width:200px;"><p>Rhino 3d & Grasshopper</p></div>
                       </ul></p>
+                  </div>
                   </div>
             </article>
            
@@ -605,6 +615,7 @@
 
 
   <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
  <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/hisrc.js"></script>
   <script src="js/respond.min.js"></script>
@@ -615,10 +626,9 @@
     });
   </script>
  
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+   
 
   <script src="js/application.js"></script>
 </body>
 </html>
        
-

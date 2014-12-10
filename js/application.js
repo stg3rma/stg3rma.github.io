@@ -365,7 +365,7 @@
 
  
 
-      }); //end click
+    
    }); //end ready
 
 

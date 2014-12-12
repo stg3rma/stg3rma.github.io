@@ -30,22 +30,23 @@
  canvas {
    border: 2px dotted black; 
 }
-#kitteh {
-    width: 900px;
-    height: 200px;
+#homeslider {
+    width: 1200px;
+    height: 500px;
     background-repeat: no-repeat;
 }
 .painting {
-    background-image: url(../images/painting_carousel_sm.png);
+    background-image: url(../images/painting_carousel_lg.png);
+    no
 }
 .papercraft {
-    background-image: url(../images/papercraft_carousel_sm.png);
+    background-image: url(../images/papercraft_carousel_lg.png);
 }
 .furniture {
-    background-image: url(../images/furniture_carousel_sm.png);
+    background-image: url(../images/furniture_carousel_lg.png);
 }
 
-/* Hi, I'm custom CSS */
+/* Hi, I'm custom CSS - from Jen's Fruit demo*/
 
 #furniture .ui-grid-a .ui-block-a {
     width: 69%;
@@ -68,19 +69,6 @@
   border-bottom-right-radius: inherit;
 }
 
-@media all and (max-width: 720px) {
-    #furniture .ui-grid-a .ui-block-a,
-    #furniture .ui-grid-a .ui-block-b {
-        width: 100%;
-    }
-    #home .ui-grid-a .ui-block-a,
-    
-     {
-        width: 100%;
-      
-    }
-}
-
 
 .ui-btn.tooltip-btn,
 .ui-btn.tooltip-btn:hover,
@@ -90,69 +78,38 @@
 }
 
 
-#furniture_home img {
+#home img {
     width: 100%;
     max-width: 100%;
 }
 
 
-
-#kitteh {
-    width: 300px;
-    height: 188px;
-    background-repeat: no-repeat;
-}
-.one {
-    background-image: url(img/one.jpg);
-}
-.two {
-    background-image: url(img/two.jpg);
-}
-.three {
-    background-image: url(img/three.jpg);
-}
-.lots {
-    background-image: url(img/lots.jpg);
-}
-.puppy {
-    background-image: url(img/puppy.jpg);
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Hi, I'm custom CSS */
-img {
-  width: 100%;
-  max-width: 100%;
-}
-#oranges .ui-grid-a .ui-block-a {
-  width: 74%;
+#furniture .ui-grid-a .ui-block-a {
+  width: 64%;
   padding-right: 1%;
 }
-#oranges .ui-grid-a .ui-block-b {
-  width: 25%;
+#furniture .ui-grid-a .ui-block-b {
+  width: 35%;
 }
-.custom-corners .ui-bar {
-  -webkit-border-top-left-radius: inherit;
-  border-top-left-radius: inherit;
-  -webkit-border-top-right-radius: inherit;
-  border-top-right-radius: inherit;
+
+
+@media all and (max-width: 720px) {
+  #oranges .ui-grid-a .ui-block-a,
+  #oranges .ui-grid-a .ui-block-b {
+    width: 100%;
+  }
+  .ui-grid-c .ui-block-a,
+  .ui-grid-c .ui-block-b,
+  .ui-grid-c .ui-block-c,
+   {
+    width: 49%;
+    padding-right: 1%;
+  }
 }
-.custom-corners .ui-body {
-  border-top-width: 0;
-  -webkit-border-bottom-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-  -webkit-border-bottom-right-radius: inherit;
-  border-bottom-right-radius: inherit;
-}
+
+
+
+
 
 
 

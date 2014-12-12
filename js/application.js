@@ -103,7 +103,7 @@
    }); //end desk image hover
 
    //popover on hover on about page interests tab
-   $(function (){ 
+ /*  $(function (){ 
       $("#d3").popover({trigger: "hover",
       content: "D3!"});      
    }); 
@@ -124,7 +124,7 @@
       content: "Rhino3d"});      
    }); //end popover
 
-
+*/
    //if else based on time of day on contact page
       $(function (){
        var greeting;

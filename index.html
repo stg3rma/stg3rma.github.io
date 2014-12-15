@@ -34,129 +34,72 @@
 <body>
 <!-- Home Page-->
    <section data-role="page" id="home" data-theme="c">
-
   	<header data-role="header" data-position="fixed">
     <h1>Stefanie St. Germain</h1>
-      <div data-role="tabs" id="tabs">
         <div data-role="navbar">
           <ul>
-            <li><a href="#home" data-ajax="false">home</a></li>
-            <li><a href="#projects" data-ajax="false">projects</a></li>
-            <li><a href="#about"  data-ajax="false">about</a></li>
-            <li><a href="#contact" data-ajax="false">contact</a></li>
+            <li><a href="#home" class="ui-btn-active" >home</a></li>
+            <li><a href="#furniture">furniture</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
-        </div>
-  
-        <div id="projects">
-          <ul data-role="listview" data-inset="true">
-              <li><a href="#furniture">furniture</a></li>
-              <li><a href="#">papercraft</a></li>
-              <li><a href="#">painting</a></li>
-          </ul>
-        </div>
-      </div>
+        </div> 
     </header>
 
-    <!-- -->
-<!-- home page carousel start -->   
-
-<!--
-<div id="carousel-home " class="carousel slide" data-ride="carousel">
-
-  <ol class="carousel-indicators  hidden-sm">
-    <li data-target="#carousel-home" data-slide-to="0" ></li>
-    <li data-target="#carousel-home" data-slide-to="1" ></li>
-    <li data-target="#carousel-home" data-slide-to="2" class="active"></li>
-  </ol>
-
-  <div class="carousel-inner hisrc">
-    <div class="item active">
-      <a href="/furniture.html"><img class="img-responsive" src="images/furniture_carousel_sm.png" data-1x="images/furniture_carousel_lg.png" data-2x="images/furniture_carousel_lg.png" alt="drawer front detail" ></a>
-      <div class="carousel-caption">
-        <h2>furniture</h2>
-        <p class="hidden-xs hidden-sm">draw, measure twice & cut once</p>
-      </div>
-    </div>
-    <div class="item">
-      <a href="/painting.html"><img class="img-responsive" src="images/painting_carousel_sm.png" data-1x="images/painting_carousel_lg.png" data-2x="images/painting_carousel_lg.png" alt="chopped paint image" ></a>
-      <div class="carousel-caption">
-        <h2>painting</h2>
-        <p class="hidden-xs hidden-sm">dry, layer, chop & adhere</p>
-      </div>
-    </div>
-  <div class="item">
-           <a href="/papercraft.html"><img class="img-responsive"src="images/papercraft_carousel_sm.png" data-1x="images/papercraft_carousel_lg.png" data-2x="images/papercraft_carousel_lg.png" alt="paper cutout" ></a>
-      <div class="carousel-caption ">
-         <h2>papercraft</h2>
-        <p class="hidden-xs hidden-sm">draw, cut & lift</p>
-      </div>
-    </div>
-   
-  </div>
-<carousel arrows -->
- <!-- <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> -->
-    <!-- -->
-<main id="homeslider" data-role="main" class="content">
- <div class=" ui-grid-a">
-TESTING SWIPE
-    	 <div id="slider" class="start painting"></div>
- </div>
-   <!--   <div class="hisrc">
-      <div class="furniture">
-    <a href="#furniture"><img id="furniture_home" src="images/furniture_carousel_sm.png" data-1x="images/furniture_carousel_lg.png" data-2x="images/furniture_carousel_lg.png" alt="drawer front detail" ></a> -->
- <!--     <div class="furniture">
-        <h2>furniture</h2>
-        <p >draw, measure twice & cut once</p>
-      </div>
-    </div>-->
- <!--   </div> 
-    </div>
-  <div class="item">
-      <a href="#painting"><img  src="images/painting_carousel_sm.png" data-1x="images/painting_carousel_lg.png" data-2x="images/painting_carousel_lg.png" alt="chopped paint image" ></a>
-      <div class="">
-        <h2>painting</h2>
-        <p class=">dry, layer, chop & adhere</p>
-      </div>
-    </div>
-  <div class="item">
-           <a href="papercraft.html"><img src="images/papercraft_carousel_sm.png" data-1x="images/papercraft_carousel_lg.png" data-2x="images/papercraft_carousel_lg.png" alt="paper cutout" ></a>
-      <div class="">
-         <h2>papercraft</h2>
-        <p class="">draw, cut & lift</p>
-        <p class="">draw, cut & lift</p>
-      </div>-->
-   
-   
-  
-            
-
-
-
-
  
+    <!-- -->
+<main role="main" class="ui-content" >
  
+  <div class="ui-grid-solo" id="banner" >
+     <div class="ui-bar ui-bar-c">
+        <div class="ui-block-a" id="banner_inner" >
+            <div id="banner_home" class="start"><a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all">No text</a><a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-notext ui-corner-all">No text</a></div>
+              
+        </div>
+    </div>
+  </div>        
+ <!--   <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+    <a href="#right-panel" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open right panel</a>
+      <dl>
+            <dt>Swipe <span>verb</span></dt>
+            <dd><b>1.</b> to strike or move with a sweeping motion</dd>
+        </dl>
+
+   
+
+    <!--</div> /content -->
+
+<!--    <div data-role="panel" style="background-color: green;" id="left-panel" data-theme="c">
+
+      <p>Left reveal panel.</p>
+    <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Close</a><img id="furniture_home"  src="images/furniture_carousel_sm.png" data-1x="images/furniture_carousel_lg.png" data-2x="images/furniture_carousel_lg.png" alt="drawer front detail" >
+
+    </div>
+
+    <div data-role="panel" style="background-color: red;" id="right-panel" data-display="push" data-position="right" data-theme="c">
+
+      <p>Right push panel.</p>
+    <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>
+
+    </div> -->
 
 <!-- 3 grid --> 
 
 
         <div class="ui-grid-b">
+
+ 
            <div class="ui-block-a">
               <div class="ui-bar ui-bar-c">
                     <a href="#popupFurniture" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/demilune_table_300x300.png" alt="" ></a>
                     <div>
                         <h3>Furniture</h3> 
                         <p>Completed the Cabinet & Furniture Making program at the North Bennet Street School in Boston's North End.</p>
-                        <p><a href="#" id="btn-furniture" class="ui-btn ui-icon-home ui-btn-icon-left" data-toggle="tooltip" title="view information and images about furniture" data-placement="bottom"> More  <span class="glyphicon glyphicon-tree-deciduous"></span></a></p>
+                        <p><a href="#furniture" id="btn-furniture" class="ui-btn ui-icon-home ui-btn-icon-left" data-toggle="tooltip" title="view information and images about furniture" data-placement="bottom"> More  <span class="glyphicon glyphicon-tree-deciduous"></span></a></p>
                     </div>
               </div>
             </div>
-       
+    
 
             
               <div class="ui-block-b">
@@ -212,32 +155,21 @@ TESTING SWIPE
 <!-- furniture page-->
  <section data-role="page" id="furniture" data-theme="c">
     <header data-role="header" data-position="fixed">
-      <div data-role="tabs" id="tabs">
+    <h1>Stefanie St. Germain</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#home" data-ajax="false">home</a></li>
-            <li><a href="#projects" data-ajax="false">projects</a></li>
-            <li><a href="#about"  data-ajax="false">about</a></li>
-            <li><a href="#contact" data-ajax="false">contact</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#furniture" class="ui-btn-active" >furniture</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
-        </div>
-        <div id="home" class="ui-body-d ui-content">
-         
-        </div>
-        <div id="projects">
-          <ul data-role="listview" data-inset="true">
-              <li><a href="#furniture">furniture</a></li>
-              <li><a href="#">papercraft</a></li>
-              <li><a href="#">painting</a></li>
-          </ul>
-        </div>
-      </div>
+        </div> 
     </header>
-      <main data-role="main" class="ui-content ui-grid-a">
-        
+      <main data-role="main" class="ui-content">
+        <div class="ui-grid-solo">
         <div class="ui-block-a">
-         <div   class="ui-corner-all custom-corners" data-theme="b">
-             <div class="ui-bar ui-bar-a">
+         <div   class="ui-corner-all custom-corners" data-theme="c">
+             
                  <div class="ui-bar ui-bar-a">
                     <h3>furniture</h3>
                  </div>
@@ -252,9 +184,9 @@ TESTING SWIPE
                 </div>
             </div>
           </div>
+        </div>
 
-        <hr>
-        <div >
+        <div class="ui-grid-b"> 
             
      
  <article class="ui-block-a">
@@ -294,7 +226,7 @@ TESTING SWIPE
 
 <!-- /.bs-example -->
 
-        </div>
+       
      
       </article>
       <!-- aside -->
@@ -316,82 +248,8 @@ TESTING SWIPE
 
       <!-- aside end -->      
 
-
-        </div>
-     </div>          
-<!-- furniture modal 
-<div class="modal fade" id="furnitureModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">Close</span><span class="sr-only">Close</span></button>
-        
-      </div>
-      <div class="modal-body">
-<!-- jquery mobile dialog -->
-<!-- <a href="dialog.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">Open dialog</a> -->
-<!-- popup image (equivalent to modal slideshow)
-
-<a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Photo landscape</a>
-<a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="fade">Photo portrait</a>
-<div data-role="popup" id="popupPhotoLandscape" class="photopopup" data-overlay-theme="c" data-corners="false" data-tolerance="30,15">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="../_assets/img/photo-landscape.jpg" alt="Photo landscape">
-</div>
-<div data-role="popup" id="popupPhotoPortrait" class="photopopup" data-overlay-theme="c" data-corners="false" data-tolerance="30,15">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="../_assets/img/photo-portrait.jpg" alt="Photo portrait">
 </div>
 
-  -->    
-      <!-- furniture carousel start -->   
-<!--<div id="carousel-furniture" class="carousel slide" data-ride="carousel">
-
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-furniture" data-slide-to="0" ></li>
-    <li data-target="#carousel-furniture" data-slide-to="1" ></li>
-    <li data-target="#carousel-furniture" data-slide-to="2" ></li>
-  </ol>
-
-  <div class="carousel-inner hisrc">
-    <div class="item active">
-      <img src="images/demilune_table_lg.png" data-1x="images/demilune_table_lg.png" data-2x="images/demilune_table_lg.png" alt="..." >
-      <div class="carousel-caption">
-        <h2>furniture</h2>
-        <p>draw, measure twice & cut once</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/desk_closed_lg.png" data-1x="images/desk_closed_lg.png" data-2x="images/desk_closed_lg.png" alt="..." >
-      <div class="carousel-caption">
-        <h2>painting</h2>
-        <p>dry, layer, chop & adhere</p>
-      </div>
-    </div>
-  <div class="item">
-           <img src="images/armchair_lg.png" data-1x="images/armchair_lg.png" data-2x="images/armchair_lg.png" alt="..." >
-      <div class="carousel-caption">
-         <h2>papercraft</h2>
-        <p>draw, cut & lift</p>
-      </div>
-    </div>
-   
-  </div>
-
-  <!-- carousel arrows 
-  <a class="left carousel-control" href="#carousel-furniture" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-furniture" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-<!-- furniture carousel end -->
-
-
-      </div>
-   
-    </div>
-  </div>
-</div>
     	</main>
         <footer data-role="footer">
             <p>&copy; 2014 Stefanie St. Germain</p>
@@ -399,28 +257,17 @@ TESTING SWIPE
     </section>
 <!-- furniture page end-->	
 <!-- contact page start -->
- <section data-role="page" id="contact" data-theme="c">
+ <section data-role="page" id="contact"  data-theme="c">
     <header data-role="header" data-position="fixed">
-      <div data-role="tabs" id="tabs">
+    <h1>Stefanie St. Germain</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#home" data-ajax="false">home</a></li>
-            <li><a href="#projects" data-ajax="false">projects</a></li>
-            <li><a href="#about"  data-ajax="false">about</a></li>
-            <li><a href="#contact" data-ajax="false">contact</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#furniture">furniture</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact" class="ui-btn-active">contact</a></li>
           </ul>
-        </div>
-        <div id="home" class="ui-body-d ui-content">
-         
-        </div>
-        <div id="projects">
-          <ul data-role="listview" data-inset="true">
-              <li><a href="#furniture">furniture</a></li>
-              <li><a href="#">papercraft</a></li>
-              <li><a href="#">painting</a></li>
-          </ul>
-        </div>
-      </div>
+        </div> 
     </header>
         <main data-role="main" class="ui-content ui-grid-a">
 <div  >
@@ -499,32 +346,21 @@ TESTING SWIPE
             <p>&copy; 2014 Stefanie St. Germain</p>
         </footer>
 </section>
--->
+
 <!-- about page end -->
     
 
  <section data-role="page" id="about" data-theme="c">
     <header data-role="header" data-position="fixed">
-      <div data-role="tabs" id="tabs">
+    <h1>Stefanie St. Germain</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#home" data-ajax="false">home</a></li>
-            <li><a href="#projects" data-ajax="false">projects</a></li>
-            <li><a href="#about"  data-ajax="false">about</a></li>
-            <li><a href="#contact" data-ajax="false">contact</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#furniture">furniture</a></li>
+            <li><a href="#about" class="ui-btn-active">about</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
-        </div>
-        <div id="home" class="ui-body-d ui-content">
-         
-        </div>
-        <div id="projects">
-          <ul data-role="listview" data-inset="true">
-              <li><a href="#furniture">furniture</a></li>
-              <li><a href="#">papercraft</a></li>
-              <li><a href="#">painting</a></li>
-          </ul>
-        </div>
-      </div>
+        </div> 
     </header>
         <main data-role="main" class="ui-content ui-grid-solo">
                <div class="ui-block-a" data-theme="c" class="collapsibleset">
@@ -541,6 +377,44 @@ TESTING SWIPE
                       <li>Boston College, B.A in Art History, summa cum laude</li>
                       <li>North Bennet Street School, Cabinet & Furniture Making</li>
                       <li>Harvard Extension School, applicant to the degree of Master of Liberal Arts (ALM)
+                      <div>
+                       <table data-role="table" id="table-classes" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-them="c" data-column-btn-text="columns" data-column-popup-theme="c">
+                      <thead>
+                        <tr class="ui-bar-d">
+                            <th data-priority="1">Course</th>
+                            <th data-priority="2">Code</th>
+                            <th data-priority="3">Term</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr id="current">
+                            <td >Understanding and Developing Interactive Media</td>
+                            <td>DGMD E-20</td>
+                            <td>Fall Term 2014</td>
+                          </tr>
+                           <tr id="complete">
+                            <td >Web Content Management Systems</td>
+                            <td>DGMD E-25</td>
+                            <td>Spring Term 2014</td>
+                          </tr>
+                           <tr id="complete">
+                            <td>Web App Dev/Groovy and Grails</td>
+                            <td>CSCI E-56</td>
+                            <td>Fall Term 2013</td>
+                          </tr>
+                           <tr id="complete">
+                            <td>Screen-Based, Phys Computing</td>
+                            <td>CSCI E-9</td>
+                            <td>Spring Term 2013</td>
+                          </tr>
+                           <tr id="complete">
+                            <td>Dynamic Web Applications</td>
+                            <td>CSCI E-75</td>
+                            <td>Fall Term 2012</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                      </div>
                     </ul>
                   </p>
                   </div>
@@ -567,21 +441,7 @@ TESTING SWIPE
         </footer>
     </section>
 
-<section data-role="page" id="kitten">
-         <header data-role="header">
-                  <h1>Moar Kittehz!</h1>
-            </header>
-            <main id="test" data-role="content">
-                  <p>Swipe left/right to increase and decrease the number of kittehz you see.</p>
-                  <p>Tap and hold to change to lots of adorable kittehz.</p>
-                  <p>Try an orientation change to see 3 kittehz and a surprise.</p>
-                  <div id="kitteh" class="start"></div>
-            </main>
-            <footer data-role="footer">
-                  <p>&copy; Moar Kittens!</p>
-            </footer>
-            
-      </section>
+
 
 
 

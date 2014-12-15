@@ -30,31 +30,26 @@
  canvas {
    border: 2px dotted black; 
 }
-#homeslider {
-    width: 1200px;
-    height: 500px;
+#banner_home{
+    width: 1315px;
+    height: 200px;
     background-repeat: no-repeat;
+    padding: 0px;
+
 }
 .painting {
     background-image: url(../images/painting_carousel_lg.png);
-    no
+  
 }
 .papercraft {
     background-image: url(../images/papercraft_carousel_lg.png);
 }
 .furniture {
     background-image: url(../images/furniture_carousel_lg.png);
+
 }
 
-/* Hi, I'm custom CSS - from Jen's Fruit demo*/
 
-#furniture .ui-grid-a .ui-block-a {
-    width: 69%;
-    padding-right: 1%;
-}
-#furniture .ui-grid-a .ui-block-b {
-    width: 30%;
-}
 .custom-corners .ui-bar {
   -webkit-border-top-left-radius: inherit;
   border-top-left-radius: inherit;
@@ -94,24 +89,37 @@
 
 
 @media all and (max-width: 720px) {
-  #oranges .ui-grid-a .ui-block-a,
-  #oranges .ui-grid-a .ui-block-b {
+  #furniture .ui-grid-solo .ui-block-a,
+  #furniture .ui-grid-b .ui-block-a,
+  #furniture .ui-grid-b .ui-block-b {
     width: 100%;
   }
-  .ui-grid-c .ui-block-a,
-  .ui-grid-c .ui-block-b,
-  .ui-grid-c .ui-block-c,
+  #home .ui-grid-c .ui-block-a,
+  #home   .ui-grid-c .ui-block-b,
+  #home   .ui-grid-c .ui-block-c,
    {
-    width: 49%;
-    padding-right: 1%;
+    width: 100%;
+    
   }
 }
 
 
 
+dl{font-family: "Times New Roman", Times, serif; padding: 1em;}
+dt{font-size: 2em; font-weight: bold;}
+dt span{font-size: .5em; color:#777; margin-left: .5em;}
+dd{font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee;}
+.back-btn{float: right; margin: 0 2em 1em 0;}
 
 
+#home :not(INPUT):not(TEXTAREA){
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 
+}
 
 
 

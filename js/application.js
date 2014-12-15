@@ -1,23 +1,23 @@
 
    $(document).ready(function(){
-
+$('#banner_home').removeClass().addClass('papercraft'); 
 //assignment 3 start
- $('#homeslider').bind('swipeleft', function(event) {
-    $('#slider').removeClass().addClass('painting');           
+ $('#banner').bind('swiperight', function(event) {
+    $('#banner_home').removeClass().addClass('painting');           
  });
- $('#homeslider').bind('swiperight', function(event) {
-      $('#slider').removeClass().addClass('papercraft');         
+ $('#banner').bind('taphold', function(event) {
+      $('#banner_home').removeClass().addClass('papercraft');         
  });
- $('#homeslider').bind('taphold', function(event) {
-     $('#slider').removeClass().addClass('furniture');
+ $('#banner').bind('swipeleft', function(event) {
+     $('#banner_home').removeClass().addClass('furniture');
  });
  $( window ).on( 'orientationchange', function() {
   if(window.orientation == 0) {
-       $('#slider').removeClass().addClass('puppy');
+       $('#banner_home').removeClass().addClass('puppy');
   } else {
-        $('#slider').removeClass().addClass('three');
+        $('#banner_home').removeClass().addClass('three');
   }
-  });
+  }); //taphold swiperight
 //assignment 3 end
 
       console.log("Document loaded!"); //for debugging
@@ -362,10 +362,24 @@
     
 
 
+        //panel swipe open example from jquery mobile
+        $(document).on("pagecreate", "#home", function(){
+          $(document).on("swipeleft swiperight", "#home",
+            function(e){
+              if($(".ui-page-active").jqmData("panel")!= "open")
+            {
+              if(e.type === "swipeleft"){
+                $("#right-panel").panel("open");
+              } else if (e.type === "swiperight"){
+                $("#left-panel").panel("open");
+              }
+            }
 
- 
 
-    
+
+        });//end page created
    }); //end ready
 
+
+}); //end ready
 

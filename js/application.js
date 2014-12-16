@@ -378,7 +378,9 @@ $('#banner_home').removeClass().addClass('papercraft');
 
 
         });//end page created
-   }); //end ready
+       }); //end ready
+
+        $( "#homepanel" ).trigger( "updatelayout" );
 
 
 }); //end ready

@@ -44,6 +44,8 @@
             <li><a href="#contact">contact</a></li>
           </ul>
         </div> 
+
+
     </header>
 
  
@@ -83,8 +85,20 @@
 
     </div> -->
 
-<!-- 3 grid --> 
+<!-- left side panel --> 
+<div data-role="panel" id="homepanel" data-display="overlay">
+   <h3>Events</h3>
+   <div class="ui-body ui-body-c ui-corner-all">
+   <h4>Cool and Distant: New work by Michael St.Germain: </h4>
+   <a href="http://mikesartnook.blogspot.com/"><img src="images/msg.jpg"></a>
+   <p>Atlantic Works Gallery is pleased to present “cool and distant” a quiet and quirky exhibition of smaller- than-life paintings, drawings and objects by Michael St.Germain. “Cool and distant" reveals   the unexpected, humorous and poignant visual adventures of an artist more versed in artistic process than emotional self-awareness.</p>
 
+<p>Atlantic Works Gallery is located in East Boston, just footsteps from the foodie-paradise that is known as Maverick Square. The gallery has dramatic “across the water” views of Charlestown and the Tobin Bridge. Take a well-deserved break from your holiday shopping; we are a mere 12-minute drive from Copley Square and are easily accessible by the MBTA Blue Line.</p>
+
+<p>Location: Atlantic Works Gallery, 80 Border Street (3rd floor), East Boston, MA 02128</p>
+   </p>
+   </div>
+</div><!-- /panel -->
 
         <div class="ui-grid-b">
 
@@ -147,7 +161,8 @@
 
 </main>
         <footer data-role="footer" data-position="fixed">
-            <p>&copy; 2014 Stefanie St. Germain</p>
+           <p>&copy; 2014 Stefanie St. Germain  <a href="#homepanel" class="ui-btn ui-icon-calendar ui-btn-icon-notext ui-corner-all">Events</a></p>
+
         </footer>
     </section>
 <!-- furniture page-->
@@ -324,9 +339,13 @@
           
           <input id="radio-choice-v-2b" type="radio" name="radio-choice-v-2"  value="off">
         <label for="radio-choice-v-2b">No, not at this time</label>
-       
+
+
       
       </fieldset>
+              <label for="flipcheck">I viewed your site on:</label>
+        <input type="checkbox" data-on-text="mobile" data-off-text="PC" data-role="flipswitch" name="flipcheck" id="flipcheck" data-wrapper-class="custom-label-flipswitch">
+       
         
    </div > 
        

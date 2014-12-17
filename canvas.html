@@ -24,58 +24,16 @@
 </head>
 
 <body>
-<div class="container">
-    <nav class="navbar navbar-inverse navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="glyphicon glyphicon-list"></span>
-		MENU
-      </button>
-      <a class="navbar-brand" href="/index.html">Stefanie St. Germain</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">projects<span class="caret"></span></a>
-			  <ul class="dropdown-menu" role="menu">
-				<li><a href="/furniture.html">furniture</a></li>
-				<li><a href="/painting.html">painting</a></li>
-				<li><a href="/papercraft.html">papercraft</a></li>
-			  </ul>
-		</li>
-        <li><a href="about.html">about</a></li>
-		<li><a href="contact.html">contact</a></li>
-          
-      </ul>
-    </div>
-</div>
-</nav>
-<!-- Header End-->
-
-<ol class="breadcrumb">
-  <li><a href="/index.html">Home</a></li>
-  <li class="active"><a href="/canvas.html">Canvas</a></li>
-
-</ol>	
-
-        
-     
-				
-				 <div class="container">  
-            <div class="col-md-5">
-		
-       
+                                                                <div class="container"> 
+            <div class="col-md-4">
+                               
+      
   <h1>Pattern Viewer</h1>
     <canvas width="300" height="300" id="canvas1"></canvas>
- <br><br>
+<br>
         <label for="image">Select an image: </label>
         <select id="image">
-            <option checked>Please select one:</option>
+            <option checked="">Please select one:</option>
             <option value="blue">blue</option>
             <option value="kidney">kidney</option>
             <option value="leaves">leaves</option>
@@ -90,15 +48,15 @@
         <button id="create">Create Image</button>
          <button id="clear">Clear Canvas</button>
      </div>
-
-        <div class="col-md-5">
+ 
+        <div class="col-md-4">
        <h1>Pattern Maker</h1>
-
+ 
     <canvas width="300" height="300" id="canvas2"></canvas>
-     
+    
         <label for="points">Select number of points on star: </label>
         <select id="points">
-            <option checked>Please select one:</option>
+            <option checked="">Please select one:</option>
             <option value="3">three</option>
             <option value="4">four</option>
             <option value="5">five</option>
@@ -110,15 +68,29 @@
         </select><br>
         <label for="colors">Select fill color: </label>
         <select id="colors">
-            <option checked>Please select one:</option>
+            <option checked="">Please select one:</option>
             <option value="#006600">green</option>
             <option value="#0b45a9">blue</option>
             <option value="#000">black</option>
             <option value="#ccc">gray</option>
         </select><br>
- <label for="rows">Select number of rows: </label>
+<label for="rows">Select number of rows: </label>
         <select id="rows">
-            <option checked>Number of rows:</option>
+            <option checked="">Number of rows:</option>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+            <option value="4">four</option>
+            <option value="5">five</option>
+            <option value="6">six</option>
+            <option value="7">seven</option>
+            <option value="8">eight</option>
+            <option value="9">nine</option>
+            <option value="10">ten</option>  
+            </select><br>
+             <label for="columns">Number of columns: </label>
+        <select id="columns">
+            <option checked="">Please select one:</option>
             <option value="1">one</option>
             <option value="2">two</option>
             <option value="3">three</option>
@@ -129,26 +101,23 @@
             <option value="8">eight</option>
             <option value="9">nine</option>
             <option value="10">ten</option>   
-            </select><br>
-             <label for="columns">Number of columns: </label>
-        <select id="columns">
-            <option checked>Please select one:</option>
-            <option value="1">one</option>
-            <option value="2">two</option>
-            <option value="3">three</option>
-            <option value="4">four</option>
-            <option value="5">five</option>
-            <option value="6">six</option>
-            <option value="7">seven</option>
-            <option value="8">eight</option>
-            <option value="9">nine</option>
-            <option value="10">ten</option>    
             </select>   <br>
+        <label>Click on shapes to rotate</label> <br>
         <button id="create2">Create Image</button>
          <button id="clear2">Clear Canvas</button>
-    
+   
     </div>
-
+            <div class="col-md-4">
+   
+       
+  <h1>Decorate a Tree</h1>
+    <canvas width="300" height="300" id="canvas3"></canvas>
+<br>
+         <label for="tree">Drag ornaments onto tree</label> <br>
+        <button id="create3">Create Image</button>
+         <button id="clear3">Clear Canvas</button>
+         <button id="save3">Save Image</button>
+     </div>
    </div>     
 
 

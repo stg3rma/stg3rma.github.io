@@ -93,6 +93,116 @@ $('#clear').click(function(){
 $('#clear2').click(function(){
   $('#canvas2').clearCanvas();
 });
-   }); //end ready
+
+//tree decorator
+//trunk  
+ $('#create3').click(function(){
+$('#canvas3').drawRect({
+  fillStyle: 'brown',
+  layer: 'true',
+  draggable: 'true',
+  x: 150, y: 245,
+  width: 30,
+  height: 30
+});
+//tree
+$('#canvas3').drawSlice({
+  fillStyle: 'green',
+  draggable: 'true',
+  x: 150, y: 30,
+  radius: 200,
+  // start and end angles in degrees
+  start: 150, end: 210
+});
+ 
+$('#canvas3')
+// Draw a circle
+.drawArc({
+  layer: true,
+   draggable: 'true',
+  groups: ['circles'],
+  fillStyle: 'red',
+  x: 220, y: 100,
+  radius: 10
+})
+.drawArc({
+  layer: true,
+   draggable: 'true',
+  groups: ['circles'],
+  fillStyle: 'red',
+  x: 220, y: 100,
+  radius: 7
+})
+// Draw another circle
+.drawArc({
+  layer: true,
+   draggable: 'true',
+  groups: ['circles'],
+  fillStyle: 'yellow',
+  x: 250, y: 100,
+  radius: 5
+})
+// Draw another circle
+.drawArc({
+  layer: true,
+  groups: ['circles'],
+   draggable: 'true',
+  fillStyle: 'blue',
+  x: 70, y: 100,
+  radius: 10
+})
+$('#canvas3')
+// Draw a circle
+.drawArc({
+  layer: true,
+   draggable: 'true',
+  groups: ['circles'],
+  fillStyle: 'red',
+  x: 100, y: 100,
+  radius: 11
+})
+// Draw another circle
+.drawArc({
+  layer: true,
+   draggable: 'true',
+  groups: ['circles'],
+  fillStyle: 'yellow',
+  x: 150, y: 100,
+  radius: 5
+})
+// Draw another circle
+.drawArc({
+  layer: true,
+  groups: ['circles'],
+   draggable: 'true',
+  fillStyle: 'blue',
+  x: 270, y: 100,
+  radius: 10
+})
+// Draw a star
+$('#canvas3').drawPolygon({
+  groups: ['circles'],
+  layer: 'true',
+  draggable: 'true',
+  fillStyle: 'yellow',
+  x: 100, y: 100,
+  radius: 25,
+  sides: 5,
+  concavity: 0.5
+})
+// Animate all layers in the group 'circles'
+.animateLayerGroup('circles', {
+  y: 290
+}, 280);
+}); //end click3
+
+//function to clear the canvas
+$('#clear3').click(function(){
+  $('#canvas3').clearCanvas();
+});
+$('#save3').click(function(){
+  $('#canvas3').getCanvasImage('jpeg', .5);
+});
+}); //end ready
 
 

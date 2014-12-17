@@ -55,21 +55,21 @@
           $('#canvas1').drawText({
             fillStyle: '#fff',
             strokeStyle: '#000',
-            strokeWidth: 3,
+            strokeWidth: 1,
             x: 150,
             y: 50,
-            fontSize: '5em',
-            fontFamily: 'Impact, sans-serif',
+            fontSize: '2em',
+            fontFamily: 'Verdana, sans-serif',
             text: line1
           })
           .drawText({
             fillStyle: '#fff',
             strokeStyle: '#000',
-            strokeWidth: 3,
+            strokeWidth: 1,
             x: 200,
             y: 470,
-            fontSize: '5em',
-            fontFamily: 'Impact, sans-serif',
+            fontSize: '2em',
+            fontFamily: 'Verdana, sans-serif',
             text: line2
           }); //end draw text
         } // end memetext

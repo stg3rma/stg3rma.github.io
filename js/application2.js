@@ -198,11 +198,12 @@ $('#canvas3').drawPolygon({
 
 //function to clear the canvas
 $('#clear3').click(function(){
-  $('#canvas3').clearCanvas();
-});
-$('#save3').click(function(){
-  $('#canvas3').getCanvasImage('jpeg', .5);
-});
+$('#canvas3').removeLayerGroup('circles').drawLayers();
+
+ $('#canvas3').clearCanvas();
+})
+.drawLayers();
+
 }); //end ready
 
 
